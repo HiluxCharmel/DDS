@@ -1,0 +1,616 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "presentation": "Présentation",
+    "missions": "Missions",
+    "organigramme": "Organigramme",
+    "team": "Équipe",
+    "history": "Historique",
+    "domains": "Domaines d'intervention",
+    "projects": "Projets & Programmes",
+    "news": "Actualités",
+    "publications": "Publications",
+    "partners": "Partenaires",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "DDS-O",
+    "subtitle": "Direction Départementale<br>de la Santé de l'Ouémé",
+    "cta": "Prendre rendez-vous"
+  },
+  "hero": {
+    "slide1": {
+      "tag": "Santé pour tous",
+      "title": "Votre santé, notre priorité",
+      "description": "La Direction Départementale de la Santé de l'Ouémé œuvre chaque jour pour garantir l'accès aux soins de qualité à tous les citoyens du département.",
+      "cta": "Découvrir nos services"
+    },
+    "slide2": {
+      "tag": "Programme 2025",
+      "title": "Campagne de vaccination",
+      "description": "Protégez-vous et protégez vos proches. Participez aux campagnes de vaccination organisées dans toutes les zones sanitaires de l'Ouémé.",
+      "cta": "En savoir plus"
+    },
+    "slide3": {
+      "tag": "Innovation",
+      "title": "Modernisation des centres de santé",
+      "description": "Des centaines d'équipements médicaux, dont 600 cardiotocographes réceptionnés par le Gouvernement.",
+      "cta": "Voir nos projets"
+    }
+  },
+  "quickServices": {
+    "appointment": {
+      "title": "Prendre rendez-vous",
+      "description": "Planifiez votre consultation"
+    },
+    "report": {
+      "title": "Signaler un problème",
+      "description": "Alertez-nous d'un incident sanitaire"
+    },
+    "publications": {
+      "title": "Nos publications",
+      "description": "Rapports et documents officiels"
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "description": "Une question ? Écrivez-nous"
+    }
+  },
+  "news": {
+    "title": "Actualités",
+    "viewAll": "Voir toutes les actualités",
+    "featured": {
+      "tag": "Événement",
+      "date": "6 février 2026",
+      "title": "Réhabilitation du centre de santé de Médédjonou",
+      "description": "Le centre de santé de Médédjonou dans la commune d'Adjarra a été entièrement rénové grâce à un projet municipal. William Houndjo, directeur départemental, a salué cette approche participative et inclusive.",
+      "readMore": "Lire la suite"
+    },
+    "article1": {
+      "tag": "Santé maternelle",
+      "date": "28 janvier 2026",
+      "title": "Zéro décès maternel : un objectif atteint",
+      "description": "Après des formations sur la gestion des hémorragies post-partum, aucun décès maternel n'a été enregistré dans les zones ABD, AMAA et PNAS.",
+      "readMore": "Lire"
+    },
+    "article2": {
+      "tag": "Équipements",
+      "date": "15 janvier 2026",
+      "title": "Comment le système e-SIGL révolutionne la gestion des médicaments dans l'Ouémé",
+      "description": "Grâce au système numérique e-SIGL, fini les ruptures de stocks ! La gestion des médicaments devient 100% connectée pour garantir des soins rapides et disponibles à tout moment.",
+      "readMore": "Lire"
+    },
+    "article3": {
+      "tag": "Prévention",
+      "date": "3 janvier 2026",
+      "title": "Campagne de lutte contre le paludisme",
+      "description": "Distribution gratuite de moustiquaires imprégnées dans toutes les zones sanitaires du département.",
+      "readMore": "Lire"
+    }
+  },
+  "presentation": {
+    "label": "À propos",
+    "title": "Direction Départementale de la Santé de l'Ouémé",
+    "lead": "La DDS-O est une structure déconcentrée du ministère de la Santé du Bénin, chargée de mettre en œuvre la politique sanitaire de l'État dans le département de l'Ouémé.",
+    "description": "Créée en 2017 suite à la dissociation des départements Ouémé et Plateau, nous coordonnons les services de santé publics et privés, supervisons trois zones sanitaires (ABD, AMAA, PNAS) et fournissons un appui technique aux communes.",
+    "stats": {
+      "zones": "Zones sanitaires",
+      "centers": "Centres de santé",
+      "population": "Habitants couverts"
+    },
+    "cta": "Découvrir nos missions",
+    "mission": {
+      "title": "Notre mission",
+      "description": "Garantir l'accès à des soins de santé de qualité pour tous les citoyens de l'Ouémé"
+    }
+  },
+  "domains": {
+    "label": "Nos actions",
+    "title": "Domaines d'intervention",
+    "intro": "La DDS-O intervient dans plusieurs domaines clés pour assurer la santé et le bien-être de la population",
+    "maternal": {
+      "title": "Santé maternelle et infantile",
+      "description": "Programmes de réduction de la mortalité maternelle, soins prénatals et néonatals, formation des sages-femmes"
+    },
+    "vaccination": {
+      "title": "Vaccinations",
+      "description": "Campagnes de vaccination contre la poliomyélite, la rougeole et autres maladies évitables"
+    },
+    "diseases": {
+      "title": "Lutte contre les maladies",
+      "description": "Prévention et traitement du paludisme, VIH/SIDA, tuberculose et autres pathologies prioritaires"
+    },
+    "primaryCare": {
+      "title": "Soins de santé primaires",
+      "description": "Accès aux consultations, traitements et services de santé de base dans tous les centres"
+    },
+    "community": {
+      "title": "Santé communautaire",
+      "description": "Actions de sensibilisation, éducation sanitaire et mobilisation communautaire"
+    },
+    "surveillance": {
+      "title": "Surveillance épidémiologique",
+      "description": "Veille sanitaire, gestion des urgences et préparation aux épidémies"
+    }
+  },
+  "projects": {
+    "title": "Projets & Programmes",
+    "viewAll": "Voir tous les projets",
+    "status": {
+      "ongoing": "En cours",
+      "completed": "Achevé"
+    },
+    "project1": {
+      "title": "Réduction de la mortalité maternelle",
+      "description": "Programme soutenu par l'USAID et MSH pour améliorer la prise en charge des complications obstétricales dans les zones ABD, AMAA et PNAS.",
+      "partner": "USAID, MSH",
+      "zone": "3 zones sanitaires",
+      "details": "Détails du projet"
+    },
+    "project2": {
+      "title": "Modernisation des infrastructures",
+      "description": "Réhabilitation des centres de santé et dotation en équipements médicaux et informatiques modernes.",
+      "partner": "Gouvernement",
+      "zone": "Tout le département",
+      "details": "Détails du projet"
+    },
+    "project3": {
+      "title": "Lutte contre les médicaments contrefaits",
+      "description": "Formation sur la convention Médicrime pour magistrats, policiers et agents sanitaires avec l'appui de l'USAID.",
+      "partner": "DPMED, FONAC, USAID",
+      "zone": "Région",
+      "details": "Détails du projet"
+    }
+  },
+  "partners": {
+    "label": "Collaboration",
+    "title": "Nos partenaires"
+  },
+  "contactSection": {
+    "title": "Contactez-nous",
+    "intro": "Nous sommes à votre écoute pour toute question ou demande d'information.",
+    "address": {
+      "title": "Adresse",
+      "content": "Porto-Novo, Bénin<br>Code Plus: FJF7+74F"
+    },
+    "hours": {
+      "title": "Horaires",
+      "content": "Lundi - Vendredi<br>8h00 - 12h30 | 14h00 - 17h30"
+    },
+    "email": {
+      "title": "Email",
+      "content": "contact@dds-oueme.bj"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "content": "+229 XX XX XX XX"
+    }
+  },
+  "contactForm": {
+    "title": "Envoyez-nous un message",
+    "name": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Sélectionnez un sujet",
+    "subjectOptions": {
+      "info": "Demande d'information",
+      "appointment": "Prise de rendez-vous",
+      "complaint": "Réclamation",
+      "other": "Autre"
+    },
+    "message": "Message",
+    "submit": "Envoyer le message",
+    "required": "*"
+  },
+  "appointmentForm": {
+    "title": "Prendre rendez-vous",
+    "subtitle": "Planifiez votre consultation en quelques clics",
+    "name": "Nom complet",
+    "phone": "Téléphone",
+    "email": "Email",
+    "service": "Service",
+    "servicePlaceholder": "Sélectionnez un service",
+    "serviceOptions": {
+      "consultation": "Consultation générale",
+      "vaccination": "Vaccination",
+      "maternity": "Santé maternelle",
+      "pediatrics": "Pédiatrie",
+      "other": "Autre"
+    },
+    "date": "Date souhaitée",
+    "time": "Heure préférée",
+    "timePlaceholder": "Sélectionnez une heure",
+    "notes": "Informations complémentaires",
+    "submit": "Confirmer le rendez-vous",
+    "required": "*"
+  },
+  "reportForm": {
+    "title": "Signaler un problème sanitaire",
+    "subtitle": "Aidez-nous à améliorer la santé publique en signalant tout incident ou problème sanitaire",
+    "type": "Type de signalement",
+    "typePlaceholder": "Sélectionnez le type",
+    "typeOptions": {
+      "counterfeit": "Médicament contrefait/périmé",
+      "insalubrity": "Insalubrité",
+      "epidemic": "Suspicion d'épidémie",
+      "facility": "Dysfonctionnement d'un centre de santé",
+      "other": "Autre"
+    },
+    "location": "Lieu",
+    "locationPlaceholder": "Ville, quartier, commune",
+    "date": "Date de l'incident",
+    "description": "Description détaillée",
+    "descriptionPlaceholder": "Décrivez le problème observé avec le maximum de détails",
+    "anonymous": "Soumettre anonymement (nous ne pourrons pas vous recontacter)",
+    "name": "Votre nom",
+    "phone": "Votre téléphone",
+    "email": "Votre email",
+    "submit": "Envoyer le signalement",
+    "required": "*"
+  },
+  "footer": {
+    "title": "DDS-O",
+    "subtitle": "Direction Départementale de la Santé de l'Ouémé",
+    "location": "Porto-Novo, Bénin",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Restez informé de nos actualités",
+      "placeholder": "Votre email",
+      "submit": "S'abonner"
+    },
+    "copyright": "Direction Départementale de la Santé de l'Ouémé. Tous droits réservés.",
+    "legal": "Mentions légales",
+    "accessibility": "Accessibilité",
+    "sitemap": "Plan du site",
+    "privacy": "Politique de confidentialité"
+  },
+  "notifications": {
+    "languageChanged": "Langue changée",
+    "messageSent": "Message envoyé avec succès! Nous vous contacterons bientôt.",
+    "appointmentConfirmed": "Rendez-vous confirmé pour le {{date}} à {{time}}. Un SMS de confirmation vous sera envoyé.",
+    "reportSubmitted": "Signalement enregistré avec succès. Nous examinerons votre rapport dans les plus brefs délais.",
+    "invalidEmail": "Veuillez entrer une adresse email valide",
+    "invalidPhone": "Veuillez entrer un numéro de téléphone valide"
+  },
+  "missions": {
+    "pageTitle": "Nos Missions | DDS-O",
+    "title": "Nos Missions",
+    "subtitle": "La Direction Départementale de la Santé de l'Ouémé au service de la population",
+    "mainMission": {
+      "title": "Notre Mission Principale",
+      "description": "Assurer la mise en œuvre de la politique sanitaire nationale au niveau du département de l'Ouémé, garantir l'accès universel à des soins de santé de qualité et coordonner l'ensemble des acteurs du système de santé pour améliorer les indicateurs sanitaires de la population."
+    },
+    "strategic": {
+      "label": "Nos axes stratégiques",
+      "title": "Missions Stratégiques",
+      "mission1": {
+        "title": "Planification et Coordination",
+        "description": "Élaborer, mettre en œuvre et suivre les plans d'action sanitaires départementaux en coordination avec le Ministère de la Santé et les zones sanitaires.",
+        "action1": "Planification stratégique triennale et annuelle",
+        "action2": "Coordination des 3 zones sanitaires (ABD, AMAA, PNAS)",
+        "action3": "Suivi-évaluation des performances",
+        "action4": "Harmonisation des interventions sanitaires"
+      },
+      "mission2": {
+        "title": "Amélioration de l'Offre de Soins",
+        "description": "Garantir la disponibilité et l'accessibilité de services de santé de qualité à tous les niveaux de la pyramide sanitaire.",
+        "action1": "Supervision des centres de santé publics et privés",
+        "action2": "Amélioration du plateau technique",
+        "action3": "Formation continue du personnel de santé",
+        "action4": "Accréditation et contrôle qualité"
+      },
+      "mission3": {
+        "title": "Prévention et Promotion de la Santé",
+        "description": "Développer des programmes de prévention et de promotion de la santé pour réduire la morbidité et la mortalité.",
+        "action1": "Campagnes de vaccination de masse",
+        "action2": "Éducation sanitaire et sensibilisation",
+        "action3": "Lutte contre les maladies transmissibles",
+        "action4": "Promotion de l'hygiène et de l'assainissement"
+      },
+      "mission4": {
+        "title": "Surveillance Épidémiologique",
+        "description": "Assurer une veille sanitaire permanente et une réponse rapide aux urgences de santé publique.",
+        "action1": "Système de surveillance des maladies",
+        "action2": "Investigation des épidémies",
+        "action3": "Gestion des urgences sanitaires",
+        "action4": "Rapportage au niveau central"
+      },
+      "mission5": {
+        "title": "Santé Maternelle et Infantile",
+        "description": "Réduire la mortalité maternelle, néonatale et infanto-juvénile à travers des interventions ciblées.",
+        "action1": "Consultations prénatales et postnatales",
+        "action2": "Accouchements assistés",
+        "action3": "Prise en charge des urgences obstétricales",
+        "action4": "Suivi de la croissance de l'enfant"
+      },
+      "mission6": {
+        "title": "Gestion des Médicaments",
+        "description": "Assurer la disponibilité, l'accessibilité et la qualité des médicaments essentiels et des produits de santé.",
+        "action1": "Approvisionnement en médicaments essentiels",
+        "action2": "Contrôle de la qualité pharmaceutique",
+        "action3": "Lutte contre les médicaments contrefaits",
+        "action4": "Pharmacovigilance"
+      }
+    },
+    "responsibilities": {
+      "title": "Responsabilités Clés",
+      "item1": {
+        "title": "Appui technique aux communes",
+        "description": "Accompagnement des mairies dans la planification et la mise en œuvre des actions de santé communautaire"
+      },
+      "item2": {
+        "title": "Mobilisation des ressources",
+        "description": "Recherche et mobilisation de financements pour les programmes de santé départementaux"
+      },
+      "item3": {
+        "title": "Gestion des ressources humaines",
+        "description": "Planification, formation et déploiement du personnel de santé dans le département"
+      },
+      "item4": {
+        "title": "Partenariat et collaboration",
+        "description": "Collaboration avec les partenaires techniques et financiers pour l'atteinte des objectifs"
+      },
+      "item5": {
+        "title": "Système d'information sanitaire",
+        "description": "Collecte, analyse et diffusion des données sanitaires pour la prise de décision"
+      },
+      "item6": {
+        "title": "Recherche opérationnelle",
+        "description": "Conduite d'études pour améliorer l'efficacité des interventions sanitaires"
+      }
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Un département de l'Ouémé où chaque citoyen a accès à des soins de santé de qualité, dans un système de santé performant, équitable et résilient, contribuant au développement humain durable."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "value1": "Excellence et qualité des soins",
+      "value2": "Équité et accessibilité universelle",
+      "value3": "Intégrité et redevabilité",
+      "value4": "Innovation et amélioration continue",
+      "value5": "Collaboration et partenariat"
+    },
+    "cta": {
+      "title": "Ensemble pour une meilleure santé",
+      "description": "Découvrez comment nous mettons en œuvre nos missions au quotidien",
+      "team": "Rencontrer notre équipe",
+      "projects": "Voir nos projets"
+    }
+  },
+  "organigramme": {
+    "pageTitle": "Organigramme | DDS-O",
+    "title": "Organigramme",
+    "subtitle": "Structure organisationnelle de la Direction Départementale de la Santé de l'Ouémé",
+    "director": {
+      "title": "Directeur Départemental",
+      "name": "Dr. William HOUNDJO",
+      "email": "directeur@dds-oueme.bj",
+      "bio": "Expert en santé publique avec plus de 20 ans d'expérience"
+    },
+    "deputy1": {
+      "title": "Directeur Adjoint chargé des Soins",
+      "name": "Dr. [Nom à compléter]",
+      "email": "adjoint.soins@dds-oueme.bj"
+    },
+    "deputy2": {
+      "title": "Directeur Adjoint chargé de l'Administration",
+      "name": "M./Mme [Nom à compléter]",
+      "email": "adjoint.admin@dds-oueme.bj"
+    },
+    "service1": {
+      "title": "Service Épidémiologie et Surveillance",
+      "head": "Chef de Service"
+    },
+    "service2": {
+      "title": "Service Santé Maternelle et Infantile",
+      "head": "Chef de Service"
+    },
+    "service3": {
+      "title": "Service de la Pharmacie et du Médicament",
+      "head": "Chef de Service"
+    },
+    "service4": {
+      "title": "Service Planification et Statistiques",
+      "head": "Chef de Service"
+    },
+    "service5": {
+      "title": "Service Formation et Recherche",
+      "head": "Chef de Service"
+    },
+    "service6": {
+      "title": "Service Financier et Comptable",
+      "head": "Chef de Service"
+    },
+    "service7": {
+      "title": "Service des Ressources Humaines",
+      "head": "Chef de Service"
+    },
+    "service8": {
+      "title": "Service du Système d'Information Sanitaire",
+      "head": "Chef de Service"
+    },
+    "legend": {
+      "title": "Légende",
+      "direction": "Direction",
+      "deputy": "Direction Adjointe",
+      "service": "Services Techniques"
+    },
+    "zones": {
+      "title": "Zones Sanitaires Supervisées",
+      "subtitle": "La DDS-O coordonne et supervise 3 zones sanitaires dans le département",
+      "abd": {
+        "name": "Zone Sanitaire Adjarra-Bonou-Dangbo (ABD)",
+        "coverage": "Couverture",
+        "coverageText": "Communes d'Adjarra, Bonou et Dangbo",
+        "population": "Population",
+        "populationText": "~350,000 habitants",
+        "centers": "Centres de santé",
+        "centersText": "25+ centres actifs"
+      },
+      "amaa": {
+        "name": "Zone Sanitaire Aguégués-Missérété-Akpro-Avrankou (AMAA)",
+        "coverage": "Couverture",
+        "coverageText": "Communes d'Aguégués, Missérété, Akpro-Missérété et Avrankou",
+        "population": "Population",
+        "populationText": "~380,000 habitants",
+        "centers": "Centres de santé",
+        "centersText": "28+ centres actifs"
+      },
+      "pnas": {
+        "name": "Zone Sanitaire Porto-Novo-Adjarra-Sèmè (PNAS)",
+        "coverage": "Couverture",
+        "coverageText": "Communes de Porto-Novo et Sèmè-Kpodji",
+        "population": "Population",
+        "populationText": "~400,000 habitants",
+        "centers": "Centres de santé",
+        "centersText": "30+ centres actifs"
+      }
+    }
+  },
+  "equipe": {
+    "pageTitle": "Notre Équipe | DDS-O",
+    "title": "Notre Équipe",
+    "subtitle": "Des professionnels dévoués au service de votre santé",
+    "intro": {
+      "title": "Une équipe d'experts au service de la santé publique",
+      "description": "La Direction Départementale de la Santé de l'Ouémé s'appuie sur une équipe multidisciplinaire de professionnels qualifiés et expérimentés, engagés à améliorer l'état de santé de la population du département."
+    },
+    "leadership": {
+      "title": "Direction"
+    },
+    "director": {
+      "position": "Directeur Départemental",
+      "bio": "Médecin de santé publique chevronné avec plus de 20 ans d'expérience dans le système de santé béninois, Dr. William Houndjo dirige la DDS-O avec vision et engagement. Spécialiste en épidémiologie et gestion des services de santé, il a contribué à de nombreux programmes nationaux de santé et mène aujourd'hui la transformation du système de santé départemental pour le rendre plus accessible, équitable et performant."
+    },
+    "deputy": {
+      "title": "Direction Adjointe"
+    },
+    "deputy1": {
+      "position": "Directeur Adjoint chargé des Soins",
+      "name": "Dr. [Nom à compléter]",
+      "desc": "Coordonne l'ensemble des activités de soins et supervise la qualité des services offerts dans les structures sanitaires du département."
+    },
+    "deputy2": {
+      "position": "Directeur Adjoint chargé de l'Administration",
+      "name": "M./Mme [Nom à compléter]",
+      "desc": "Gère les aspects administratifs, financiers et logistiques de la direction pour assurer un fonctionnement optimal des services."
+    },
+    "services": {
+      "title": "Chefs de Service"
+    },
+    "service1": {
+      "position": "Service Épidémiologie et Surveillance",
+      "name": "Dr. [Nom à compléter]",
+      "desc": "Assure la veille épidémiologique et la gestion des urgences sanitaires."
+    },
+    "service2": {
+      "position": "Service Santé Maternelle et Infantile",
+      "name": "Mme/Dr. [Nom à compléter]",
+      "desc": "Coordonne les programmes de santé de la mère et de l'enfant."
+    },
+    "service3": {
+      "position": "Service de la Pharmacie",
+      "name": "Pharm. [Nom à compléter]",
+      "desc": "Gère l'approvisionnement et le contrôle qualité des médicaments."
+    },
+    "service4": {
+      "position": "Service Planification et Statistiques",
+      "name": "M./Mme [Nom à compléter]",
+      "desc": "Élabore les plans d'action et assure le suivi-évaluation."
+    },
+    "service5": {
+      "position": "Service Formation et Recherche",
+      "name": "Dr. [Nom à compléter]",
+      "desc": "Coordonne la formation continue du personnel de santé."
+    },
+    "service6": {
+      "position": "Service Système d'Information Sanitaire",
+      "name": "M. [Nom à compléter]",
+      "desc": "Gère les données sanitaires et les systèmes informatiques."
+    },
+    "stats": {
+      "title": "Notre Force Humaine",
+      "stat1": "Personnel de la DDS-O",
+      "stat2": "Agents de santé dans le département",
+      "stat3": "Spécialités médicales représentées",
+      "stat4": "Personnes desservies"
+    },
+    "cta": {
+      "title": "Rejoignez notre équipe",
+      "description": "La DDS-O recrute régulièrement des professionnels de santé passionnés et dévoués",
+      "contact": "Nous contacter",
+      "opportunities": "Voir les opportunités"
+    }
+  },
+  "historique": {
+    "pageTitle": "Notre Historique | DDS-O",
+    "title": "Notre Historique",
+    "subtitle": "Un parcours au service de la santé publique dans l'Ouémé",
+    "intro": {
+      "title": "Des décennies au service de la santé",
+      "description": "Depuis sa création, la Direction Départementale de la Santé de l'Ouémé a connu une évolution remarquable, marquée par des réformes structurelles, des innovations et un engagement constant pour l'amélioration de la santé des populations."
+    },
+    "timeline": {
+      "title": "Chronologie des Événements Marquants",
+      "event1": {
+        "title": "Indépendance et Structuration",
+        "description": "Après l'indépendance du Bénin, mise en place des premières structures sanitaires départementales. Organisation du système de santé en régions et départements."
+      },
+      "event2": {
+        "title": "Réforme du Système de Santé",
+        "description": "Adoption d'une politique nationale de santé axée sur les soins de santé primaires. Renforcement des structures départementales et création de nouveaux centres de santé."
+      },
+      "event3": {
+        "title": "Initiative de Bamako",
+        "description": "Mise en œuvre de l'Initiative de Bamako pour améliorer l'accessibilité financière aux soins. Introduction du système de recouvrement des coûts et de gestion communautaire."
+      },
+      "event4": {
+        "title": "Création des Zones Sanitaires",
+        "description": "Découpage sanitaire du département en zones sanitaires pour une meilleure couverture territoriale et une gestion de proximité des services de santé."
+      },
+      "event5": {
+        "title": "Programme Santé Maternelle",
+        "description": "Lancement d'un vaste programme de réduction de la mortalité maternelle et néonatale avec l'appui des partenaires internationaux. Formation massive de sages-femmes."
+      },
+      "event6": {
+        "title": "Dissociation Ouémé-Plateau",
+        "description": "Création officielle de la Direction Départementale de la Santé de l'Ouémé suite à la séparation administrative des départements Ouémé et Plateau. Nouvelle structuration et renforcement de l'autonomie."
+      },
+      "event7": {
+        "title": "Riposte à la COVID-19",
+        "description": "Coordination de la riposte départementale face à la pandémie de COVID-19. Mise en place de centres de dépistage, de traitement et de vaccination. Renforcement de la surveillance épidémiologique."
+      },
+      "event8": {
+        "title": "Digitalisation du Système",
+        "description": "Déploiement du système e-SIGL pour la gestion électronique des médicaments et renforcement du système d'information sanitaire. Introduction de solutions numériques dans la gestion des données de santé."
+      },
+      "event9": {
+        "title": "Modernisation des Infrastructures",
+        "description": "Vaste programme de réhabilitation et d'équipement des centres de santé. Réception de centaines d'équipements médicaux modernes incluant 600 cardiotocographes pour améliorer le suivi des grossesses."
+      },
+      "event10": {
+        "title": "Vision 2030",
+        "description": "Adoption d'un plan stratégique ambitieux visant la couverture sanitaire universelle et l'excellence dans la prestation des services de santé. Zéro décès maternel évitable d'ici 2030."
+      }
+    },
+    "milestones": {
+      "title": "Réalisations Clés",
+      "milestone1": "Zones sanitaires créées et opérationnelles",
+      "milestone2": "Centres de santé réhabilités depuis 2017",
+      "milestone3": "Taux de couverture vaccinale atteint",
+      "milestone4": "Décès maternel dans certaines zones (2025)",
+      "milestone5": "Cardiotocographes réceptionnés",
+      "milestone6": "Centres connectés au système e-SIGL"
+    },
+    "future": {
+      "title": "Construire l'avenir ensemble",
+      "description": "Fort de notre riche histoire, nous poursuivons notre mission avec détermination pour bâtir un système de santé plus fort, plus accessible et plus performant.",
+      "missions": "Découvrir nos missions",
+      "projects": "Nos projets en cours"
+    }
+  }
+}

@@ -1,0 +1,616 @@
+{
+  "navigation": {
+    "home": "Home",
+    "presentation": "About",
+    "missions": "Missions",
+    "organigramme": "Organization Chart",
+    "team": "Team",
+    "history": "History",
+    "domains": "Areas of Intervention",
+    "projects": "Projects & Programs",
+    "news": "News",
+    "publications": "Publications",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "DDS-O",
+    "subtitle": "Ouémé Departmental<br>Health Directorate",
+    "cta": "Make an appointment"
+  },
+  "hero": {
+    "slide1": {
+      "tag": "Health for All",
+      "title": "Your health, our priority",
+      "description": "The Ouémé Departmental Health Directorate works every day to ensure access to quality healthcare for all citizens of the department.",
+      "cta": "Discover our services"
+    },
+    "slide2": {
+      "tag": "2025 Program",
+      "title": "Vaccination Campaign",
+      "description": "Protect yourself and your loved ones. Participate in vaccination campaigns organized in all health zones of Ouémé.",
+      "cta": "Learn more"
+    },
+    "slide3": {
+      "tag": "Innovation",
+      "title": "Health Center Modernization",
+      "description": "Hundreds of medical equipment, including 600 cardiotocographs received by the Government.",
+      "cta": "See our projects"
+    }
+  },
+  "quickServices": {
+    "appointment": {
+      "title": "Make an appointment",
+      "description": "Schedule your consultation"
+    },
+    "report": {
+      "title": "Report a problem",
+      "description": "Alert us to a health incident"
+    },
+    "publications": {
+      "title": "Our publications",
+      "description": "Official reports and documents"
+    },
+    "contact": {
+      "title": "Contact us",
+      "description": "A question? Write to us"
+    }
+  },
+  "news": {
+    "title": "News",
+    "viewAll": "View all news",
+    "featured": {
+      "tag": "Event",
+      "date": "February 6, 2026",
+      "title": "Rehabilitation of Médédjonou Health Center",
+      "description": "The Médédjonou health center in the commune of Adjarra has been completely renovated through a municipal project. William Houndjo, departmental director, praised this participatory and inclusive approach.",
+      "readMore": "Read more"
+    },
+    "article1": {
+      "tag": "Maternal Health",
+      "date": "January 28, 2026",
+      "title": "Zero maternal deaths: a goal achieved",
+      "description": "After training on postpartum hemorrhage management, no maternal deaths were recorded in the ABD, AMAA and PNAS zones.",
+      "readMore": "Read"
+    },
+    "article2": {
+      "tag": "Equipment",
+      "date": "January 15, 2026",
+      "title": "How the e-SIGL system is revolutionizing drug management in Ouémé",
+      "description": "Thanks to the digital e-SIGL system, no more stock-outs! Drug management becomes 100% connected to ensure fast and available care at all times.",
+      "readMore": "Read"
+    },
+    "article3": {
+      "tag": "Prevention",
+      "date": "January 3, 2026",
+      "title": "Anti-malaria campaign",
+      "description": "Free distribution of insecticide-treated mosquito nets in all health zones of the department.",
+      "readMore": "Read"
+    }
+  },
+  "presentation": {
+    "label": "About Us",
+    "title": "Ouémé Departmental Health Directorate",
+    "lead": "The DDS-O is a decentralized structure of the Benin Ministry of Health, responsible for implementing the State's health policy in the Ouémé department.",
+    "description": "Created in 2017 following the separation of Ouémé and Plateau departments, we coordinate public and private health services, supervise three health zones (ABD, AMAA, PNAS) and provide technical support to municipalities.",
+    "stats": {
+      "zones": "Health zones",
+      "centers": "Health centers",
+      "population": "Population covered"
+    },
+    "cta": "Discover our missions",
+    "mission": {
+      "title": "Our mission",
+      "description": "Ensure access to quality healthcare for all citizens of Ouémé"
+    }
+  },
+  "domains": {
+    "label": "Our Actions",
+    "title": "Areas of Intervention",
+    "intro": "The DDS-O intervenes in several key areas to ensure the health and well-being of the population",
+    "maternal": {
+      "title": "Maternal and Child Health",
+      "description": "Maternal mortality reduction programs, prenatal and neonatal care, midwife training"
+    },
+    "vaccination": {
+      "title": "Vaccinations",
+      "description": "Vaccination campaigns against polio, measles and other preventable diseases"
+    },
+    "diseases": {
+      "title": "Disease Control",
+      "description": "Prevention and treatment of malaria, HIV/AIDS, tuberculosis and other priority pathologies"
+    },
+    "primaryCare": {
+      "title": "Primary Healthcare",
+      "description": "Access to consultations, treatments and basic health services in all centers"
+    },
+    "community": {
+      "title": "Community Health",
+      "description": "Awareness actions, health education and community mobilization"
+    },
+    "surveillance": {
+      "title": "Epidemiological Surveillance",
+      "description": "Health monitoring, emergency management and epidemic preparedness"
+    }
+  },
+  "projects": {
+    "title": "Projects & Programs",
+    "viewAll": "View all projects",
+    "status": {
+      "ongoing": "Ongoing",
+      "completed": "Completed"
+    },
+    "project1": {
+      "title": "Maternal Mortality Reduction",
+      "description": "Program supported by USAID and MSH to improve the management of obstetric complications in the ABD, AMAA and PNAS zones.",
+      "partner": "USAID, MSH",
+      "zone": "3 health zones",
+      "details": "Project details"
+    },
+    "project2": {
+      "title": "Infrastructure Modernization",
+      "description": "Rehabilitation of health centers and provision of modern medical and IT equipment.",
+      "partner": "Government",
+      "zone": "Entire department",
+      "details": "Project details"
+    },
+    "project3": {
+      "title": "Fight Against Counterfeit Medicines",
+      "description": "Training on the Medicrime convention for magistrates, police and health workers with USAID support.",
+      "partner": "DPMED, FONAC, USAID",
+      "zone": "Region",
+      "details": "Project details"
+    }
+  },
+  "partners": {
+    "label": "Collaboration",
+    "title": "Our Partners"
+  },
+  "contactSection": {
+    "title": "Contact Us",
+    "intro": "We are here to listen for any questions or information requests.",
+    "address": {
+      "title": "Address",
+      "content": "Porto-Novo, Benin<br>Plus Code: FJF7+74F"
+    },
+    "hours": {
+      "title": "Hours",
+      "content": "Monday - Friday<br>8:00 AM - 12:30 PM | 2:00 PM - 5:30 PM"
+    },
+    "email": {
+      "title": "Email",
+      "content": "contact@dds-oueme.bj"
+    },
+    "phone": {
+      "title": "Phone",
+      "content": "+229 XX XX XX XX"
+    }
+  },
+  "contactForm": {
+    "title": "Send us a message",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "subjectPlaceholder": "Select a subject",
+    "subjectOptions": {
+      "info": "Information request",
+      "appointment": "Appointment booking",
+      "complaint": "Complaint",
+      "other": "Other"
+    },
+    "message": "Message",
+    "submit": "Send message",
+    "required": "*"
+  },
+  "appointmentForm": {
+    "title": "Make an Appointment",
+    "subtitle": "Schedule your consultation in a few clicks",
+    "name": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "service": "Service",
+    "servicePlaceholder": "Select a service",
+    "serviceOptions": {
+      "consultation": "General consultation",
+      "vaccination": "Vaccination",
+      "maternity": "Maternal health",
+      "pediatrics": "Pediatrics",
+      "other": "Other"
+    },
+    "date": "Desired date",
+    "time": "Preferred time",
+    "timePlaceholder": "Select a time",
+    "notes": "Additional information",
+    "submit": "Confirm appointment",
+    "required": "*"
+  },
+  "reportForm": {
+    "title": "Report a Health Problem",
+    "subtitle": "Help us improve public health by reporting any incident or health problem",
+    "type": "Report type",
+    "typePlaceholder": "Select type",
+    "typeOptions": {
+      "counterfeit": "Counterfeit/expired medicine",
+      "insalubrity": "Unsanitary conditions",
+      "epidemic": "Suspected epidemic",
+      "facility": "Health center malfunction",
+      "other": "Other"
+    },
+    "location": "Location",
+    "locationPlaceholder": "City, neighborhood, municipality",
+    "date": "Incident date",
+    "description": "Detailed description",
+    "descriptionPlaceholder": "Describe the observed problem in as much detail as possible",
+    "anonymous": "Submit anonymously (we will not be able to contact you)",
+    "name": "Your name",
+    "phone": "Your phone",
+    "email": "Your email",
+    "submit": "Submit report",
+    "required": "*"
+  },
+  "footer": {
+    "title": "DDS-O",
+    "subtitle": "Ouémé Departmental Health Directorate",
+    "location": "Porto-Novo, Benin",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Stay informed about our news",
+      "placeholder": "Your email",
+      "submit": "Subscribe"
+    },
+    "copyright": "Ouémé Departmental Health Directorate. All rights reserved.",
+    "legal": "Legal Notice",
+    "accessibility": "Accessibility",
+    "sitemap": "Sitemap",
+    "privacy": "Privacy Policy"
+  },
+  "notifications": {
+    "languageChanged": "Language changed",
+    "messageSent": "Message sent successfully! We will contact you soon.",
+    "appointmentConfirmed": "Appointment confirmed for {{date}} at {{time}}. You will receive a confirmation SMS.",
+    "reportSubmitted": "Report successfully submitted. We will review your report as soon as possible.",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number"
+  },
+  "missions": {
+    "pageTitle": "Our Missions | DDS-O",
+    "title": "Our Missions",
+    "subtitle": "The Ouémé Departmental Health Directorate serving the population",
+    "mainMission": {
+      "title": "Our Main Mission",
+      "description": "To ensure the implementation of national health policy at the Ouémé department level, guarantee universal access to quality healthcare, and coordinate all health system stakeholders to improve the population's health indicators."
+    },
+    "strategic": {
+      "label": "Our strategic axes",
+      "title": "Strategic Missions",
+      "mission1": {
+        "title": "Planning and Coordination",
+        "description": "Develop, implement, and monitor departmental health action plans in coordination with the Ministry of Health and health zones.",
+        "action1": "Three-year and annual strategic planning",
+        "action2": "Coordination of 3 health zones (ABD, AMAA, PNAS)",
+        "action3": "Performance monitoring and evaluation",
+        "action4": "Harmonization of health interventions"
+      },
+      "mission2": {
+        "title": "Improvement of Care Provision",
+        "description": "Ensure the availability and accessibility of quality health services at all levels of the health pyramid.",
+        "action1": "Supervision of public and private health centers",
+        "action2": "Improvement of technical facilities",
+        "action3": "Continuous training of health personnel",
+        "action4": "Accreditation and quality control"
+      },
+      "mission3": {
+        "title": "Prevention and Health Promotion",
+        "description": "Develop prevention and health promotion programs to reduce morbidity and mortality.",
+        "action1": "Mass vaccination campaigns",
+        "action2": "Health education and awareness",
+        "action3": "Control of communicable diseases",
+        "action4": "Promotion of hygiene and sanitation"
+      },
+      "mission4": {
+        "title": "Epidemiological Surveillance",
+        "description": "Ensure permanent health surveillance and rapid response to public health emergencies.",
+        "action1": "Disease surveillance system",
+        "action2": "Epidemic investigation",
+        "action3": "Management of health emergencies",
+        "action4": "Reporting to central level"
+      },
+      "mission5": {
+        "title": "Maternal and Child Health",
+        "description": "Reduce maternal, neonatal, and child mortality through targeted interventions.",
+        "action1": "Prenatal and postnatal consultations",
+        "action2": "Assisted deliveries",
+        "action3": "Management of obstetric emergencies",
+        "action4": "Child growth monitoring"
+      },
+      "mission6": {
+        "title": "Drug Management",
+        "description": "Ensure the availability, accessibility, and quality of essential medicines and health products.",
+        "action1": "Supply of essential medicines",
+        "action2": "Pharmaceutical quality control",
+        "action3": "Fight against counterfeit drugs",
+        "action4": "Pharmacovigilance"
+      }
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "item1": {
+        "title": "Technical support to municipalities",
+        "description": "Support town halls in planning and implementing community health actions"
+      },
+      "item2": {
+        "title": "Resource mobilization",
+        "description": "Seeking and mobilizing funding for departmental health programs"
+      },
+      "item3": {
+        "title": "Human resources management",
+        "description": "Planning, training, and deployment of health personnel in the department"
+      },
+      "item4": {
+        "title": "Partnership and collaboration",
+        "description": "Collaboration with technical and financial partners to achieve objectives"
+      },
+      "item5": {
+        "title": "Health information system",
+        "description": "Collection, analysis, and dissemination of health data for decision-making"
+      },
+      "item6": {
+        "title": "Operational research",
+        "description": "Conducting studies to improve the effectiveness of health interventions"
+      }
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "An Ouémé department where every citizen has access to quality healthcare, in a high-performing, equitable, and resilient health system, contributing to sustainable human development."
+    },
+    "values": {
+      "title": "Our Values",
+      "value1": "Excellence and quality of care",
+      "value2": "Equity and universal accessibility",
+      "value3": "Integrity and accountability",
+      "value4": "Innovation and continuous improvement",
+      "value5": "Collaboration and partnership"
+    },
+    "cta": {
+      "title": "Together for better health",
+      "description": "Discover how we implement our missions daily",
+      "team": "Meet our team",
+      "projects": "See our projects"
+    }
+  },
+  "organigramme": {
+    "pageTitle": "Organization Chart | DDS-O",
+    "title": "Organization Chart",
+    "subtitle": "Organizational structure of the Ouémé Departmental Health Directorate",
+    "director": {
+      "title": "Departmental Director",
+      "name": "Dr. William HOUNDJO",
+      "email": "directeur@dds-oueme.bj",
+      "bio": "Public health expert with over 20 years of experience"
+    },
+    "deputy1": {
+      "title": "Deputy Director for Care",
+      "name": "Dr. [Name to be completed]",
+      "email": "adjoint.soins@dds-oueme.bj"
+    },
+    "deputy2": {
+      "title": "Deputy Director for Administration",
+      "name": "Mr./Mrs. [Name to be completed]",
+      "email": "adjoint.admin@dds-oueme.bj"
+    },
+    "service1": {
+      "title": "Epidemiology and Surveillance Service",
+      "head": "Service Head"
+    },
+    "service2": {
+      "title": "Maternal and Child Health Service",
+      "head": "Service Head"
+    },
+    "service3": {
+      "title": "Pharmacy and Medicine Service",
+      "head": "Service Head"
+    },
+    "service4": {
+      "title": "Planning and Statistics Service",
+      "head": "Service Head"
+    },
+    "service5": {
+      "title": "Training and Research Service",
+      "head": "Service Head"
+    },
+    "service6": {
+      "title": "Financial and Accounting Service",
+      "head": "Service Head"
+    },
+    "service7": {
+      "title": "Human Resources Service",
+      "head": "Service Head"
+    },
+    "service8": {
+      "title": "Health Information System Service",
+      "head": "Service Head"
+    },
+    "legend": {
+      "title": "Legend",
+      "direction": "Management",
+      "deputy": "Deputy Management",
+      "service": "Technical Services"
+    },
+    "zones": {
+      "title": "Supervised Health Zones",
+      "subtitle": "The DDS-O coordinates and supervises 3 health zones in the department",
+      "abd": {
+        "name": "Adjarra-Bonou-Dangbo Health Zone (ABD)",
+        "coverage": "Coverage",
+        "coverageText": "Municipalities of Adjarra, Bonou and Dangbo",
+        "population": "Population",
+        "populationText": "~350,000 inhabitants",
+        "centers": "Health centers",
+        "centersText": "25+ active centers"
+      },
+      "amaa": {
+        "name": "Aguégués-Missérété-Akpro-Avrankou Health Zone (AMAA)",
+        "coverage": "Coverage",
+        "coverageText": "Municipalities of Aguégués, Missérété, Akpro-Missérété and Avrankou",
+        "population": "Population",
+        "populationText": "~380,000 inhabitants",
+        "centers": "Health centers",
+        "centersText": "28+ active centers"
+      },
+      "pnas": {
+        "name": "Porto-Novo-Adjarra-Sèmè Health Zone (PNAS)",
+        "coverage": "Coverage",
+        "coverageText": "Municipalities of Porto-Novo and Sèmè-Kpodji",
+        "population": "Population",
+        "populationText": "~400,000 inhabitants",
+        "centers": "Health centers",
+        "centersText": "30+ active centers"
+      }
+    }
+  },
+  "equipe": {
+    "pageTitle": "Our Team | DDS-O",
+    "title": "Our Team",
+    "subtitle": "Dedicated professionals at your health's service",
+    "intro": {
+      "title": "A team of experts at the service of public health",
+      "description": "The Ouémé Departmental Health Directorate relies on a multidisciplinary team of qualified and experienced professionals committed to improving the health status of the department's population."
+    },
+    "leadership": {
+      "title": "Management"
+    },
+    "director": {
+      "position": "Departmental Director",
+      "bio": "A seasoned public health physician with over 20 years of experience in the Beninese health system, Dr. William Houndjo leads the DDS-O with vision and commitment. A specialist in epidemiology and health services management, he has contributed to numerous national health programs and now leads the transformation of the departmental health system to make it more accessible, equitable, and performant."
+    },
+    "deputy": {
+      "title": "Deputy Management"
+    },
+    "deputy1": {
+      "position": "Deputy Director for Care",
+      "name": "Dr. [Name to be completed]",
+      "desc": "Coordinates all care activities and supervises the quality of services offered in the department's health facilities."
+    },
+    "deputy2": {
+      "position": "Deputy Director for Administration",
+      "name": "Mr./Mrs. [Name to be completed]",
+      "desc": "Manages administrative, financial, and logistical aspects of the directorate to ensure optimal operation of services."
+    },
+    "services": {
+      "title": "Service Heads"
+    },
+    "service1": {
+      "position": "Epidemiology and Surveillance Service",
+      "name": "Dr. [Name to be completed]",
+      "desc": "Ensures epidemiological surveillance and management of health emergencies."
+    },
+    "service2": {
+      "position": "Maternal and Child Health Service",
+      "name": "Mrs./Dr. [Name to be completed]",
+      "desc": "Coordinates maternal and child health programs."
+    },
+    "service3": {
+      "position": "Pharmacy Service",
+      "name": "Pharm. [Name to be completed]",
+      "desc": "Manages drug supply and quality control."
+    },
+    "service4": {
+      "position": "Planning and Statistics Service",
+      "name": "Mr./Mrs. [Name to be completed]",
+      "desc": "Develops action plans and ensures monitoring and evaluation."
+    },
+    "service5": {
+      "position": "Training and Research Service",
+      "name": "Dr. [Name to be completed]",
+      "desc": "Coordinates continuous training of health personnel."
+    },
+    "service6": {
+      "position": "Health Information System Service",
+      "name": "Mr. [Name to be completed]",
+      "desc": "Manages health data and computer systems."
+    },
+    "stats": {
+      "title": "Our Human Strength",
+      "stat1": "DDS-O Personnel",
+      "stat2": "Health workers in the department",
+      "stat3": "Medical specialties represented",
+      "stat4": "People served"
+    },
+    "cta": {
+      "title": "Join our team",
+      "description": "The DDS-O regularly recruits passionate and dedicated health professionals",
+      "contact": "Contact us",
+      "opportunities": "See opportunities"
+    }
+  },
+  "historique": {
+    "pageTitle": "Our History | DDS-O",
+    "title": "Our History",
+    "subtitle": "A journey serving public health in Ouémé",
+    "intro": {
+      "title": "Decades serving health",
+      "description": "Since its creation, the Ouémé Departmental Health Directorate has undergone remarkable evolution, marked by structural reforms, innovations, and constant commitment to improving population health."
+    },
+    "timeline": {
+      "title": "Chronology of Major Events",
+      "event1": {
+        "title": "Independence and Structuring",
+        "description": "After Benin's independence, establishment of first departmental health structures. Organization of the health system into regions and departments."
+      },
+      "event2": {
+        "title": "Health System Reform",
+        "description": "Adoption of a national health policy focused on primary healthcare. Strengthening of departmental structures and creation of new health centers."
+      },
+      "event3": {
+        "title": "Bamako Initiative",
+        "description": "Implementation of the Bamako Initiative to improve financial accessibility to care. Introduction of cost recovery system and community management."
+      },
+      "event4": {
+        "title": "Creation of Health Zones",
+        "description": "Health division of the department into health zones for better territorial coverage and proximity management of health services."
+      },
+      "event5": {
+        "title": "Maternal Health Program",
+        "description": "Launch of a vast program to reduce maternal and neonatal mortality with support from international partners. Massive training of midwives."
+      },
+      "event6": {
+        "title": "Ouémé-Plateau Separation",
+        "description": "Official creation of the Ouémé Departmental Health Directorate following the administrative separation of Ouémé and Plateau departments. New structuring and strengthening of autonomy."
+      },
+      "event7": {
+        "title": "COVID-19 Response",
+        "description": "Coordination of departmental response to the COVID-19 pandemic. Establishment of testing, treatment, and vaccination centers. Strengthening of epidemiological surveillance."
+      },
+      "event8": {
+        "title": "System Digitalization",
+        "description": "Deployment of the e-SIGL system for electronic drug management and strengthening of the health information system. Introduction of digital solutions in health data management."
+      },
+      "event9": {
+        "title": "Infrastructure Modernization",
+        "description": "Vast program of rehabilitation and equipping of health centers. Reception of hundreds of modern medical equipment including 600 cardiotocographs to improve pregnancy monitoring."
+      },
+      "event10": {
+        "title": "Vision 2030",
+        "description": "Adoption of an ambitious strategic plan aiming for universal health coverage and excellence in health service delivery. Zero preventable maternal deaths by 2030."
+      }
+    },
+    "milestones": {
+      "title": "Key Achievements",
+      "milestone1": "Health zones created and operational",
+      "milestone2": "Health centers rehabilitated since 2017",
+      "milestone3": "Vaccination coverage rate achieved",
+      "milestone4": "Maternal deaths in certain zones (2025)",
+      "milestone5": "Cardiotocographs received",
+      "milestone6": "Centers connected to e-SIGL system"
+    },
+    "future": {
+      "title": "Building the future together",
+      "description": "With our rich history, we continue our mission with determination to build a stronger, more accessible, and more performant health system.",
+      "missions": "Discover our missions",
+      "projects": "Our ongoing projects"
+    }
+  }
+}

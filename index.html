@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Direction Départementale de la Santé de l'Ouémé - Site officiel">
+    <title>DDS-O | Direction Départementale de la Santé de l'Ouémé</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/icon.png" type="image/x-icon">
+    
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="logo-section">
+                        <div class="logo-emblem">
+                            <img src="imgs/Logo.png" alt="Logo DDS-O" class="logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <h1 data-i18n="header.title">DDS-O</h1>
+                            <p data-i18n="header.subtitle">Direction Départementale<br>de la Santé de l'Ouémé</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="cta-button" onclick="window.location.href='#rendez-vous'" data-i18n="header.cta">
+                            Prendre rendez-vous
+                        </button>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="fr">FR</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="active" data-i18n="navigation.home">Accueil</a></li>
+                    <li class="has-submenu">
+                        <a href="#presentation" data-i18n="navigation.presentation">Présentation</a>
+                        <ul class="submenu">
+                            <li><a href="missions.html" data-i18n="navigation.missions">Missions</a></li>
+                            <li><a href="organigramme.html" data-i18n="navigation.organigramme">Organigramme</a></li>
+                            <li><a href="equipe.html" data-i18n="navigation.team">Équipe</a></li>
+                            <li><a href="historique.html" data-i18n="navigation.history">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#domaines" data-i18n="navigation.domains">Domaines d'intervention</a></li>
+                    <li><a href="#projets" data-i18n="navigation.projects">Projets & Programmes</a></li>
+                    <li><a href="#actualites" data-i18n="navigation.news">Actualités</a></li>
+                    <li><a href="#publications" data-i18n="navigation.publications">Publications</a></li>
+                    <li><a href="#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    <li><a href="#contact" data-i18n="navigation.contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="accueil">
+        <div class="slides-container">
+            <div class="slide active" style="background-image: url('imgs/santé.png')">
+                <div class="slide-content container">
+                    <div class="slide-text">
+                        <span class="slide-tag" data-i18n="hero.slide1.tag">Santé pour tous</span>
+                        <h2 data-i18n="hero.slide1.title">Votre santé, notre priorité</h2>
+                        <p data-i18n="hero.slide1.description">La Direction Départementale de la Santé de l'Ouémé œuvre chaque jour pour garantir l'accès aux soins de qualité à tous les citoyens du département.</p>
+                        <a href="#services" class="btn-primary" data-i18n="hero.slide1.cta">Découvrir nos services</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: url('imgs/vaccination.png')">
+                <div class="slide-content container">
+                    <div class="slide-text">
+                        <span class="slide-tag" data-i18n="hero.slide2.tag">Programme 2025</span>
+                        <h2 data-i18n="hero.slide2.title">Campagne de vaccination</h2>
+                        <p data-i18n="hero.slide2.description">Protégez-vous et protégez vos proches. Participez aux campagnes de vaccination organisées dans toutes les zones sanitaires de l'Ouémé.</p>
+                        <a href="#actualites" class="btn-primary" data-i18n="hero.slide2.cta">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: url('imgs/moderne.png')">
+                <div class="slide-content container">
+                    <div class="slide-text">
+                        <span class="slide-tag" data-i18n="hero.slide3.tag">Innovation</span>
+                        <h2 data-i18n="hero.slide3.title">Modernisation des centres de santé</h2>
+                        <p data-i18n="hero.slide3.description">Des centaines d'équipements médicaux, dont 600 cardiotocographes réceptionnés par le Gouvernement.</p>
+                        <a href="#projets" class="btn-primary" data-i18n="hero.slide3.cta">Voir nos projets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="slider-nav prev" aria-label="Précédent">‹</button>
+        <button class="slider-nav next" aria-label="Suivant">›</button>
+        
+        <div class="slider-dots">
+            <button class="dot active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Quick Services -->
+    <section class="quick-services">
+        <div class="container">
+            <div class="services-grid">
+                <a href="#rendez-vous" class="service-card">
+                    <div class="service-icon">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="quickServices.appointment.title">Prendre rendez-vous</h3>
+                    <p data-i18n="quickServices.appointment.description">Planifiez votre consultation</p>
+                </a>
+                <a href="#signalement" class="service-card">
+                    <div class="service-icon">
+                        <ion-icon name="warning-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="quickServices.report.title">Signaler un problème</h3>
+                    <p data-i18n="quickServices.report.description">Alertez-nous d'un incident sanitaire</p>
+                </a>
+                <a href="#publications" class="service-card">
+                    <div class="service-icon">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="quickServices.publications.title">Nos publications</h3>
+                    <p data-i18n="quickServices.publications.description">Rapports et documents officiels</p>
+                </a>
+                <a href="#contact" class="service-card">
+                    <div class="service-icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="quickServices.contact.title">Nous contacter</h3>
+                    <p data-i18n="quickServices.contact.description">Une question ? Écrivez-nous</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Feed -->
+    <section id="actualites" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="news.title">Actualités</h2>
+                <a href="#" class="view-all"><span data-i18n="news.viewAll">Voir toutes les actualités</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            
+            <div class="news-featured">
+                <article class="featured-article">
+                    <div class="article-image" style="background-image: url('imgs/actu_mededjonou.png')"></div>
+                    <div class="article-content">
+                        <span class="article-tag" data-i18n="news.featured.tag">Événement</span>
+                        <span class="article-date" data-i18n="news.featured.date">6 février 2026</span>
+                        <h3 data-i18n="news.featured.title">Réhabilitation du centre de santé de Médédjonou</h3>
+                        <p data-i18n="news.featured.description">Le centre de santé de Médédjonou dans la commune d'Adjarra a été entièrement rénové grâce à un projet municipal. William Houndjo, directeur départemental, a salué cette approche participative et inclusive.</p>
+                        <a href="#" class="read-more"><span data-i18n="news.featured.readMore">Lire la suite</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="card-image" style="background-image: url('imgs/actu_decès.png')"></div>
+                    <div class="card-content">
+                        <span class="card-tag" data-i18n="news.article1.tag">Santé maternelle</span>
+                        <span class="card-date" data-i18n="news.article1.date">28 janvier 2026</span>
+                        <h4 data-i18n="news.article1.title">Zéro décès maternel : un objectif atteint</h4>
+                        <p data-i18n="news.article1.description">Après des formations sur la gestion des hémorragies post-partum, aucun décès maternel n'a été enregistré dans les zones ABD, AMAA et PNAS.</p>
+                        <a href="#" class="card-link"><span data-i18n="news.article1.readMore">Lire</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="card-image" style="background-image: url('imgs/esigl.png')"></div>
+                    <div class="card-content">
+                        <span class="card-tag" data-i18n="news.article2.tag">Équipements</span>
+                        <span class="card-date" data-i18n="news.article2.date">15 janvier 2026</span>
+                        <h4 data-i18n="news.article2.title">Comment le système e-SIGL révolutionne la gestion des médicaments dans l'Ouémé</h4>
+                        <p data-i18n="news.article2.description">Grâce au système numérique e-SIGL, fini les ruptures de stocks ! La gestion des médicaments devient 100% connectée pour garantir des soins rapides et disponibles à tout moment.</p>
+                        <a href="#" class="card-link"><span data-i18n="news.article2.readMore">Lire</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="card-image" style="background-image: url('imgs/moustiquaires.png')"></div>
+                    <div class="card-content">
+                        <span class="card-tag" data-i18n="news.article3.tag">Prévention</span>
+                        <span class="card-date" data-i18n="news.article3.date">3 janvier 2026</span>
+                        <h4 data-i18n="news.article3.title">Campagne de lutte contre le paludisme</h4>
+                        <p data-i18n="news.article3.description">Distribution gratuite de moustiquaires imprégnées dans toutes les zones sanitaires du département.</p>
+                        <a href="#" class="card-link"><span data-i18n="news.article3.readMore">Lire</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentation Section -->
+    <section id="presentation" class="presentation-section">
+        <div class="container">
+            <div class="presentation-grid">
+                <div class="presentation-content">
+                    <span class="section-label" data-i18n="presentation.label">À propos</span>
+                    <h2 data-i18n="presentation.title">Direction Départementale de la Santé de l'Ouémé</h2>
+                    <p class="lead" data-i18n="presentation.lead">La DDS-O est une structure déconcentrée du ministère de la Santé du Bénin, chargée de mettre en œuvre la politique sanitaire de l'État dans le département de l'Ouémé.</p>
+                    <p data-i18n="presentation.description">Créée en 2017 suite à la dissociation des départements Ouémé et Plateau, nous coordonnons les services de santé publics et privés, supervisons trois zones sanitaires (ABD, AMAA, PNAS) et fournissons un appui technique aux communes.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label" data-i18n="presentation.stats.zones">Zones sanitaires</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">70+</span>
+                            <span class="stat-label" data-i18n="presentation.stats.centers">Centres de santé</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label" data-i18n="presentation.stats.population">Habitants couverts</span>
+                        </div>
+                    </div>
+                    <a href="#missions" class="btn-secondary" data-i18n="presentation.cta">Découvrir nos missions</a>
+                </div>
+                <div class="presentation-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">
+                            <ion-icon name="medical-outline"></ion-icon>
+                        </div>
+                        <h4 data-i18n="presentation.mission.title">Notre mission</h4>
+                        <p data-i18n="presentation.mission.description">Garantir l'accès à des soins de santé de qualité pour tous les citoyens de l'Ouémé</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domaines Section -->
+    <section id="domaines" class="domains-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label" data-i18n="domains.label">Nos actions</span>
+                <h2 data-i18n="domains.title">Domaines d'intervention</h2>
+                <p class="section-intro" data-i18n="domains.intro">La DDS-O intervient dans plusieurs domaines clés pour assurer la santé et le bien-être de la population</p>
+            </div>
+            
+            <div class="domains-grid">
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="domains.maternal.title">Santé maternelle et infantile</h3>
+                    <p data-i18n="domains.maternal.description">Programmes de réduction de la mortalité maternelle, soins prénatals et néonatals, formation des sages-femmes</p>
+                </div>
+                
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="domains.vaccination.title">Vaccinations</h3>
+                    <p data-i18n="domains.vaccination.description">Campagnes de vaccination contre la poliomyélite, la rougeole et autres maladies évitables</p>
+                </div>
+                
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <ion-icon name="fitness-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="domains.diseases.title">Lutte contre les maladies</h3>
+                    <p data-i18n="domains.diseases.description">Prévention et traitement du paludisme, VIH/SIDA, tuberculose et autres pathologies prioritaires</p>
+                </div>
+                
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <ion-icon name="medkit-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="domains.primaryCare.title">Soins de santé primaires</h3>
+                    <p data-i18n="domains.primaryCare.description">Accès aux consultations, traitements et services de santé de base dans tous les centres</p>
+                </div>
+                
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="domains.community.title">Santé communautaire</h3>
+                    <p data-i18n="domains.community.description">Actions de sensibilisation, éducation sanitaire et mobilisation communautaire</p>
+                </div>
+                
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <ion-icon name="pulse-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="domains.surveillance.title">Surveillance épidémiologique</h3>
+                    <p data-i18n="domains.surveillance.description">Veille sanitaire, gestion des urgences et préparation aux épidémies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="projects.title">Projets & Programmes</h2>
+                <a href="#" class="view-all"><span data-i18n="projects.viewAll">Voir tous les projets</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-status ongoing" data-i18n="projects.status.ongoing">En cours</div>
+                    <h3 data-i18n="projects.project1.title">Réduction de la mortalité maternelle</h3>
+                    <p data-i18n="projects.project1.description">Programme soutenu par l'USAID et MSH pour améliorer la prise en charge des complications obstétricales dans les zones ABD, AMAA et PNAS.</p>
+                    <div class="project-meta">
+                        <span class="project-partner">
+                            <ion-icon name="handshake-outline"></ion-icon>
+                            <span data-i18n="projects.project1.partner">USAID, MSH</span>
+                        </span>
+                        <span class="project-zone">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <span data-i18n="projects.project1.zone">3 zones sanitaires</span>
+                        </span>
+                    </div>
+                    <a href="#" class="project-link"><span data-i18n="projects.project1.details">Détails du projet</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-status ongoing" data-i18n="projects.status.ongoing">En cours</div>
+                    <h3 data-i18n="projects.project2.title">Modernisation des infrastructures</h3>
+                    <p data-i18n="projects.project2.description">Réhabilitation des centres de santé et dotation en équipements médicaux et informatiques modernes.</p>
+                    <div class="project-meta">
+                        <span class="project-partner">
+                            <ion-icon name="handshake-outline"></ion-icon>
+                            <span data-i18n="projects.project2.partner">Gouvernement</span>
+                        </span>
+                        <span class="project-zone">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <span data-i18n="projects.project2.zone">Tout le département</span>
+                        </span>
+                    </div>
+                    <a href="#" class="project-link"><span data-i18n="projects.project2.details">Détails du projet</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-status completed" data-i18n="projects.status.completed">Achevé</div>
+                    <h3 data-i18n="projects.project3.title">Lutte contre les médicaments contrefaits</h3>
+                    <p data-i18n="projects.project3.description">Formation sur la convention Médicrime pour magistrats, policiers et agents sanitaires avec l'appui de l'USAID.</p>
+                    <div class="project-meta">
+                        <span class="project-partner">
+                            <ion-icon name="handshake-outline"></ion-icon>
+                            <span data-i18n="projects.project3.partner">DPMED, FONAC, USAID</span>
+                        </span>
+                        <span class="project-zone">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <span data-i18n="projects.project3.zone">Région</span>
+                        </span>
+                    </div>
+                    <a href="#" class="project-link"><span data-i18n="projects.project3.details">Détails du projet</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partenaires Section -->
+    <section id="partenaires" class="partners-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label" data-i18n="partners.label">Collaboration</span>
+                <h2 data-i18n="partners.title">Nos partenaires</h2>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="imgs/MS.png" alt="Ministère de la Santé - Bénin">
+                    <div class="partner-name">Ministère de la Santé</div>
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/OMS.png" alt="OMS">
+                    <div class="partner-name">OMS</div>
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/USAID.png" alt="USAID">
+                    <div class="partner-name">USAID</div>
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/MSH.png" alt="MSH">
+                    <div class="partner-name">MSH</div>
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/UNICEF.png" alt="UNICEF">
+                    <div class="partner-name">UNICEF</div>
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/ARS.png" alt="ARS">
+                    <div class="partner-name">ARS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Forms Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 data-i18n="contactSection.title">Contactez-nous</h2>
+                    <p class="contact-intro" data-i18n="contactSection.intro">Nous sommes à votre écoute pour toute question ou demande d'information.</p>
+                    
+                    <div class="info-block">
+                        <h4>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <span data-i18n="contactSection.address.title">Adresse</span>
+                        </h4>
+                        <p data-i18n="contactSection.address.content">1 BP 139 Porto-Novo, Bénin<br>Code Plus: FJF7+74F</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h4>
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span data-i18n="contactSection.hours.title">Horaires</span>
+                        </h4>
+                        <p data-i18n="contactSection.hours.content">Lundi - Vendredi<br>8h00 - 12h30 | 14h30 - 17h30</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h4>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span data-i18n="contactSection.email.title">Email</span>
+                        </h4>
+                        <p data-i18n="contactSection.email.content">contact@dds-oueme.bj</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h4>
+                            <ion-icon name="call-outline"></ion-icon>
+                            <span data-i18n="contactSection.phone.title">Téléphone</span>
+                        </h4>
+                        <p data-i18n="contactSection.phone.content">+229 20 21 25 50<br>+229 91 12 51 55</p>
+                    </div>
+
+                    <div class="map-card">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.382120112782!2d2.6127968999999998!3d6.473187500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s6FR4FJF7%2B74F!5e0!3m2!1sen!2sbj!4v1770895013490!5m2!1sen!2sbj" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <h3 data-i18n="contactForm.title">Envoyez-nous un message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">
+                                <span data-i18n="contactForm.name">Nom complet</span> 
+                                <span data-i18n="contactForm.required">*</span>
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <span data-i18n="contactForm.email">Email</span> 
+                                <span data-i18n="contactForm.required">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-i18n="contactForm.phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                <span data-i18n="contactForm.subject">Sujet</span> 
+                                <span data-i18n="contactForm.required">*</span>
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="" data-i18n="contactForm.subjectPlaceholder">Sélectionnez un sujet</option>
+                                <option value="info" data-i18n="contactForm.subjectOptions.info">Demande d'information</option>
+                                <option value="rdv" data-i18n="contactForm.subjectOptions.appointment">Prise de rendez-vous</option>
+                                <option value="reclamation" data-i18n="contactForm.subjectOptions.complaint">Réclamation</option>
+                                <option value="autre" data-i18n="contactForm.subjectOptions.other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <span data-i18n="contactForm.message">Message</span> 
+                                <span data-i18n="contactForm.required">*</span>
+                            </label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary" data-i18n="contactForm.submit">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rendez-vous Section -->
+    <section id="rendez-vous" class="appointment-section">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-header">
+                    <h2 data-i18n="appointmentForm.title">Prendre rendez-vous</h2>
+                    <p data-i18n="appointmentForm.subtitle">Planifiez votre consultation en quelques clics</p>
+                </div>
+                
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="apt-name">
+                                <span data-i18n="appointmentForm.name">Nom complet</span> 
+                                <span data-i18n="appointmentForm.required">*</span>
+                            </label>
+                            <input type="text" id="apt-name" name="apt-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="apt-phone">
+                                <span data-i18n="appointmentForm.phone">Téléphone</span> 
+                                <span data-i18n="appointmentForm.required">*</span>
+                            </label>
+                            <input type="tel" id="apt-phone" name="apt-phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="apt-email" data-i18n="appointmentForm.email">Email</label>
+                            <input type="email" id="apt-email" name="apt-email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="apt-service">
+                                <span data-i18n="appointmentForm.service">Service</span> 
+                                <span data-i18n="appointmentForm.required">*</span>
+                            </label>
+                            <select id="apt-service" name="apt-service" required>
+                                <option value="" data-i18n="appointmentForm.servicePlaceholder">Sélectionnez un service</option>
+                                <option value="consultation" data-i18n="appointmentForm.serviceOptions.consultation">Consultation générale</option>
+                                <option value="vaccination" data-i18n="appointmentForm.serviceOptions.vaccination">Vaccination</option>
+                                <option value="maternite" data-i18n="appointmentForm.serviceOptions.maternity">Santé maternelle</option>
+                                <option value="pediatrie" data-i18n="appointmentForm.serviceOptions.pediatrics">Pédiatrie</option>
+                                <option value="autre" data-i18n="appointmentForm.serviceOptions.other">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="apt-date">
+                                <span data-i18n="appointmentForm.date">Date souhaitée</span> 
+                                <span data-i18n="appointmentForm.required">*</span>
+                            </label>
+                            <input type="date" id="apt-date" name="apt-date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="apt-time">
+                                <span data-i18n="appointmentForm.time">Heure préférée</span> 
+                                <span data-i18n="appointmentForm.required">*</span>
+                            </label>
+                            <select id="apt-time" name="apt-time" required>
+                                <option value="" data-i18n="appointmentForm.timePlaceholder">Sélectionnez une heure</option>
+                                <option value="08:00">08:00 - 09:00</option>
+                                <option value="09:00">09:00 - 10:00</option>
+                                <option value="10:00">10:00 - 11:00</option>
+                                <option value="11:00">11:00 - 12:00</option>
+                                <option value="14:00">14:00 - 15:00</option>
+                                <option value="15:00">15:00 - 16:00</option>
+                                <option value="16:00">16:00 - 17:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apt-notes" data-i18n="appointmentForm.notes">Informations complémentaires</label>
+                        <textarea id="apt-notes" name="apt-notes" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" data-i18n="appointmentForm.submit">Confirmer le rendez-vous</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signalement Section -->
+    <section id="signalement" class="report-section">
+        <div class="container">
+            <div class="report-container">
+                <div class="report-header">
+                    <h2 data-i18n="reportForm.title">Signaler un problème sanitaire</h2>
+                    <p data-i18n="reportForm.subtitle">Aidez-nous à améliorer la santé publique en signalant tout incident ou problème sanitaire</p>
+                </div>
+                
+                <form id="reportForm" class="report-form">
+                    <div class="form-group">
+                        <label for="report-type">
+                            <span data-i18n="reportForm.type">Type de signalement</span> 
+                            <span data-i18n="reportForm.required">*</span>
+                        </label>
+                        <select id="report-type" name="report-type" required>
+                            <option value="" data-i18n="reportForm.typePlaceholder">Sélectionnez le type</option>
+                            <option value="medicament" data-i18n="reportForm.typeOptions.counterfeit">Médicament contrefait/périmé</option>
+                            <option value="insalubrite" data-i18n="reportForm.typeOptions.insalubrity">Insalubrité</option>
+                            <option value="epidemie" data-i18n="reportForm.typeOptions.epidemic">Suspicion d'épidémie</option>
+                            <option value="structure" data-i18n="reportForm.typeOptions.facility">Dysfonctionnement d'un centre de santé</option>
+                            <option value="autre" data-i18n="reportForm.typeOptions.other">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="report-location">
+                                <span data-i18n="reportForm.location">Lieu</span> 
+                                <span data-i18n="reportForm.required">*</span>
+                            </label>
+                            <input type="text" id="report-location" name="report-location" data-i18n-placeholder="reportForm.locationPlaceholder" placeholder="Ville, quartier, commune" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="report-date">
+                                <span data-i18n="reportForm.date">Date de l'incident</span> 
+                                <span data-i18n="reportForm.required">*</span>
+                            </label>
+                            <input type="date" id="report-date" name="report-date" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="report-description">
+                            <span data-i18n="reportForm.description">Description détaillée</span> 
+                            <span data-i18n="reportForm.required">*</span>
+                        </label>
+                        <textarea id="report-description" name="report-description" rows="5" required data-i18n-placeholder="reportForm.descriptionPlaceholder" placeholder="Décrivez le problème observé avec le maximum de détails"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label  style="text-align: center;">
+                            <input type="checkbox" id="report-anonymous" name="report-anonymous"><span data-i18n="reportForm.anonymous">Soumettre anonymement (nous ne pourrons pas vous recontacter)</span>
+                        </label>
+                    </div>
+                    
+                    <div id="contactInfo">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="report-name" data-i18n="reportForm.name">Votre nom</label>
+                                <input type="text" id="report-name" name="report-name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="report-phone" data-i18n="reportForm.phone">Votre téléphone</label>
+                                <input type="tel" id="report-phone" name="report-phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="report-email" data-i18n="reportForm.email">Votre email</label>
+                            <input type="email" id="report-email" name="report-email">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" data-i18n="reportForm.submit">Envoyer le signalement</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.title">DDS-O</h4>
+                    <p data-i18n="footer.subtitle">Direction Départementale de la Santé de l'Ouémé</p>
+                    <p data-i18n="footer.location">Porto-Novo, Bénin</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <ul>
+                        <li><a href="#presentation" data-i18n="navigation.presentation">Présentation</a></li>
+                        <li><a href="#domaines" data-i18n="navigation.domains">Nos domaines</a></li>
+                        <li><a href="#actualites" data-i18n="navigation.news">Actualités</a></li>
+                        <li><a href="#contact" data-i18n="navigation.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="#rendez-vous" data-i18n="quickServices.appointment.title">Prendre rendez-vous</a></li>
+                        <li><a href="#signalement" data-i18n="quickServices.report.title">Signaler un problème</a></li>
+                        <li><a href="#publications" data-i18n="navigation.publications">Publications</a></li>
+                        <li><a href="#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.newsletter.title">Newsletter</h4>
+                    <p data-i18n="footer.newsletter.description">Restez informé de nos actualités</p>
+                    <form class="newsletter-form">
+                        <input type="email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Votre email" required>
+                        <button type="submit" data-i18n="footer.newsletter.submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-i18n="footer.copyright">Direction Départementale de la Santé de l'Ouémé. Tous droits réservés.</span></p>
+                <div class="footer-links">
+                    <a href="#" data-i18n="footer.legal">Mentions légales</a>
+                    <a href="#" data-i18n="footer.accessibility">Accessibilité</a>
+                    <a href="#" data-i18n="footer.sitemap">Plan du site</a>
+                    <a href="#" data-i18n="footer.privacy">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load translation files and initialize i18next -->
+    <script>
+        // Translation resources will be loaded from external files
+        let translationResources = {
+            fr: { translation: {} },
+            en: { translation: {} }
+        };
+        
+        // Load French translations
+        fetch('fr.json')
+            .then(response => response.json())
+            .then(data => {
+                translationResources.fr.translation = data;
+                return fetch('en.json');
+            })
+            .then(response => response.json())
+            .then(data => {
+                translationResources.en.translation = data;
+                initializeI18next();
+            })
+            .catch(error => {
+                console.error('Error loading translations:', error);
+            });
+        
+        function initializeI18next() {
+            i18next.init({
+                lng: 'fr', // default language
+                fallbackLng: 'fr',
+                resources: translationResources,
+                interpolation: {
+                    escapeValue: false
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('i18next initialization error:', err);
+                    return;
+                }
+                updateContent();
+            });
+        }
+        
+        function updateContent() {
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18next.t(key);
+                
+                // Handle HTML content
+                if (translation.includes('<br>')) {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
+            });
+            
+            // Update placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n-placeholder');
+                element.placeholder = i18next.t(key);
+            });
+        }
+        
+        // Language switcher will be enhanced in script.js
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

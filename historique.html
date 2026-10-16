@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historique de la Direction Départementale de la Santé de l'Ouémé">
+    <title data-i18n="historique.pageTitle">Notre Historique | DDS-O</title>
+    <link rel="stylesheet" href="animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+    
+    <style>
+        /* Timeline specific styles */
+        .timeline-section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--primary-teal) 0%, var(--primary-green) 100%);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--spacing-xl);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-date {
+            grid-column: 2;
+            grid-row: 1;
+            text-align: left;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            grid-column: 2;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-date {
+            grid-column: 1;
+            text-align: right;
+        }
+        
+        .timeline-date {
+            font-size: 2rem;
+            font-weight: 900;
+            font-family: var(--font-display);
+            color: var(--primary-teal);
+            padding-top: var(--spacing-sm);
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-green);
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px var(--primary-green);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            left: -50px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::before {
+            right: -50px;
+        }
+        
+        .timeline-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-green) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .timeline-icon ion-icon {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .timeline-content h3 {
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.3rem;
+        }
+        
+        .timeline-content p {
+            color: var(--text-medium);
+            line-height: 1.8;
+        }
+        
+        .milestones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .milestone-card {
+            background: white;
+            border-radius: 12px;
+            padding: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--accent-coral);
+            transition: var(--transition-smooth);
+        }
+        
+        .milestone-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .milestone-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-family: var(--font-display);
+            color: var(--primary-teal);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .milestone-label {
+            color: var(--text-medium);
+            font-weight: 600;
+        }
+        
+        .intro-section {
+            background: var(--bg-light);
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                grid-template-columns: 1fr;
+                padding-left: 80px;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-content,
+            .timeline-item:nth-child(odd) .timeline-content {
+                grid-column: 1;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-date,
+            .timeline-item:nth-child(odd) .timeline-date {
+                grid-column: 1;
+                text-align: left;
+                padding-left: 0;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content::before,
+            .timeline-item:nth-child(even) .timeline-content::before {
+                left: -50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="logo-section">
+                        <div class="logo-emblem">
+                            <img src="imgs/Logo.png" alt="Logo DDS-O" class="logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <h1 data-i18n="header.title">DDS-O</h1>
+                            <p data-i18n="header.subtitle">Direction Départementale<br>de la Santé de l'Ouémé</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="cta-button" onclick="window.location.href='index.html#rendez-vous'" data-i18n="header.cta">
+                            Prendre rendez-vous
+                        </button>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="fr">FR</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html#accueil" data-i18n="navigation.home">Accueil</a></li>
+                    <li class="has-submenu">
+                        <a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a>
+                        <ul class="submenu">
+                            <li><a href="missions.html" data-i18n="navigation.missions">Missions</a></li>
+                            <li><a href="organigramme.html" data-i18n="navigation.organigramme">Organigramme</a></li>
+                            <li><a href="equipe.html" data-i18n="navigation.team">Équipe</a></li>
+                            <li><a href="historique.html" class="active" data-i18n="navigation.history">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#domaines" data-i18n="navigation.domains">Domaines d'intervention</a></li>
+                    <li><a href="index.html#projets" data-i18n="navigation.projects">Projets & Programmes</a></li>
+                    <li><a href="index.html#actualites" data-i18n="navigation.news">Actualités</a></li>
+                    <li><a href="index.html#publications" data-i18n="navigation.publications">Publications</a></li>
+                    <li><a href="index.html#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    <li><a href="index.html#contact" data-i18n="navigation.contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" data-i18n="navigation.home">Accueil</a>
+                <span>/</span>
+                <a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a>
+                <span>/</span>
+                <span data-i18n="navigation.history">Historique</span>
+            </div>
+            <h1 data-i18n="historique.title">Notre Historique</h1>
+            <p class="page-subtitle" data-i18n="historique.subtitle">Un parcours au service de la santé publique dans l'Ouémé</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2 data-i18n="historique.intro.title">Des décennies au service de la santé</h2>
+                <p class="lead" data-i18n="historique.intro.description">Depuis sa création, la Direction Départementale de la Santé de l'Ouémé a connu une évolution remarquable, marquée par des réformes structurelles, des innovations et un engagement constant pour l'amélioration de la santé des populations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: var(--spacing-xl);" data-i18n="historique.timeline.title">Chronologie des Événements Marquants</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1960</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="flag-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event1.title">Indépendance et Structuration</h3>
+                        <p data-i18n="historique.timeline.event1.description">Après l'indépendance du Bénin, mise en place des premières structures sanitaires départementales. Organisation du système de santé en régions et départements.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1975</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="medical-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event2.title">Réforme du Système de Santé</h3>
+                        <p data-i18n="historique.timeline.event2.description">Adoption d'une politique nationale de santé axée sur les soins de santé primaires. Renforcement des structures départementales et création de nouveaux centres de santé.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1990</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event3.title">Initiative de Bamako</h3>
+                        <p data-i18n="historique.timeline.event3.description">Mise en œuvre de l'Initiative de Bamako pour améliorer l'accessibilité financière aux soins. Introduction du système de recouvrement des coûts et de gestion communautaire.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1999</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="map-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event4.title">Création des Zones Sanitaires</h3>
+                        <p data-i18n="historique.timeline.event4.description">Découpage sanitaire du département en zones sanitaires pour une meilleure couverture territoriale et une gestion de proximité des services de santé.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2009</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event5.title">Programme Santé Maternelle</h3>
+                        <p data-i18n="historique.timeline.event5.description">Lancement d'un vaste programme de réduction de la mortalité maternelle et néonatale avec l'appui des partenaires internationaux. Formation massive de sages-femmes.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="git-branch-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event6.title">Dissociation Ouémé-Plateau</h3>
+                        <p data-i18n="historique.timeline.event6.description">Création officielle de la Direction Départementale de la Santé de l'Ouémé suite à la séparation administrative des départements Ouémé et Plateau. Nouvelle structuration et renforcement de l'autonomie.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event7.title">Riposte à la COVID-19</h3>
+                        <p data-i18n="historique.timeline.event7.description">Coordination de la riposte départementale face à la pandémie de COVID-19. Mise en place de centres de dépistage, de traitement et de vaccination. Renforcement de la surveillance épidémiologique.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="desktop-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event8.title">Digitalisation du Système</h3>
+                        <p data-i18n="historique.timeline.event8.description">Déploiement du système e-SIGL pour la gestion électronique des médicaments et renforcement du système d'information sanitaire. Introduction de solutions numériques dans la gestion des données de santé.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="construct-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event9.title">Modernisation des Infrastructures</h3>
+                        <p data-i18n="historique.timeline.event9.description">Vaste programme de réhabilitation et d'équipement des centres de santé. Réception de centaines d'équipements médicaux modernes incluant 600 cardiotocographes pour améliorer le suivi des grossesses.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <ion-icon name="rocket-outline"></ion-icon>
+                        </div>
+                        <h3 data-i18n="historique.timeline.event10.title">Vision 2030</h3>
+                        <p data-i18n="historique.timeline.event10.description">Adoption d'un plan stratégique ambitieux visant la couverture sanitaire universelle et l'excellence dans la prestation des services de santé. Zéro décès maternel évitable d'ici 2030.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones -->
+    <section style="background: var(--bg-light); padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: var(--spacing-lg);" data-i18n="historique.milestones.title">Réalisations Clés</h2>
+            
+            <div class="milestones-grid">
+                <div class="milestone-card">
+                    <div class="milestone-number">3</div>
+                    <div class="milestone-label" data-i18n="historique.milestones.milestone1">Zones sanitaires créées et opérationnelles</div>
+                </div>
+                
+                <div class="milestone-card">
+                    <div class="milestone-number">70+</div>
+                    <div class="milestone-label" data-i18n="historique.milestones.milestone2">Centres de santé réhabilités depuis 2017</div>
+                </div>
+                
+                <div class="milestone-card">
+                    <div class="milestone-number">85%</div>
+                    <div class="milestone-label" data-i18n="historique.milestones.milestone3">Taux de couverture vaccinale atteint</div>
+                </div>
+                
+                <div class="milestone-card">
+                    <div class="milestone-number">0</div>
+                    <div class="milestone-label" data-i18n="historique.milestones.milestone4">Décès maternel dans certaines zones (2025)</div>
+                </div>
+                
+                <div class="milestone-card">
+                    <div class="milestone-number">600</div>
+                    <div class="milestone-label" data-i18n="historique.milestones.milestone5">Cardiotocographes réceptionnés</div>
+                </div>
+                
+                <div class="milestone-card">
+                    <div class="milestone-number">100%</div>
+                    <div class="milestone-label" data-i18n="historique.milestones.milestone6">Centres connectés au système e-SIGL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Vision -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="historique.future.title">Construire l'avenir ensemble</h2>
+                <p data-i18n="historique.future.description">Fort de notre riche histoire, nous poursuivons notre mission avec détermination pour bâtir un système de santé plus fort, plus accessible et plus performant.</p>
+                <div class="cta-buttons">
+                    <a href="missions.html" class="btn-primary" data-i18n="historique.future.missions">Découvrir nos missions</a>
+                    <a href="index.html#projets" class="btn-secondary" data-i18n="historique.future.projects">Nos projets en cours</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.title">DDS-O</h4>
+                    <p data-i18n="footer.subtitle">Direction Départementale de la Santé de l'Ouémé</p>
+                    <p data-i18n="footer.location">Porto-Novo, Bénin</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a></li>
+                        <li><a href="index.html#domaines" data-i18n="navigation.domains">Nos domaines</a></li>
+                        <li><a href="index.html#actualites" data-i18n="navigation.news">Actualités</a></li>
+                        <li><a href="index.html#contact" data-i18n="navigation.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="index.html#rendez-vous" data-i18n="quickServices.appointment.title">Prendre rendez-vous</a></li>
+                        <li><a href="index.html#signalement" data-i18n="quickServices.report.title">Signaler un problème</a></li>
+                        <li><a href="index.html#publications" data-i18n="navigation.publications">Publications</a></li>
+                        <li><a href="index.html#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.newsletter.title">Newsletter</h4>
+                    <p data-i18n="footer.newsletter.description">Restez informé de nos actualités</p>
+                    <form class="newsletter-form">
+                        <input type="email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Votre email" required>
+                        <button type="submit" data-i18n="footer.newsletter.submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-i18n="footer.copyright">Direction Départementale de la Santé de l'Ouémé. Tous droits réservés.</span></p>
+                <div class="footer-links">
+                    <a href="#" data-i18n="footer.legal">Mentions légales</a>
+                    <a href="#" data-i18n="footer.accessibility">Accessibilité</a>
+                    <a href="#" data-i18n="footer.sitemap">Plan du site</a>
+                    <a href="#" data-i18n="footer.privacy">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load translation files and initialize i18next -->
+    <script>
+        let translationResources = {
+            fr: { translation: {} },
+            en: { translation: {} }
+        };
+        
+        fetch('fr.json')
+            .then(response => response.json())
+            .then(data => {
+                translationResources.fr.translation = data;
+                return fetch('en.json');
+            })
+            .then(response => response.json())
+            .then(data => {
+                translationResources.en.translation = data;
+                initializeI18next();
+            })
+            .catch(error => {
+                console.error('Error loading translations:', error);
+            });
+        
+        function initializeI18next() {
+            i18next.init({
+                lng: localStorage.getItem('preferredLanguage') || 'fr',
+                fallbackLng: 'fr',
+                resources: translationResources,
+                interpolation: {
+                    escapeValue: false
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('i18next initialization error:', err);
+                    return;
+                }
+                updateContent();
+            });
+        }
+        
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18next.t(key);
+                
+                if (translation.includes('<br>')) {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
+            });
+            
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n-placeholder');
+                element.placeholder = i18next.t(key);
+            });
+        }
+    </script>
+    
+    <script src="animations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

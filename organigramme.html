@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organigramme de la Direction Départementale de la Santé de l'Ouémé">
+    <title data-i18n="organigramme.pageTitle">Organigramme | DDS-O</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="organigramme.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+</head>
+<body class="org-chart-page">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="logo-section">
+                        <div class="logo-emblem">
+                            <img src="imgs/Logo.png" alt="Logo DDS-O" class="logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <h1 data-i18n="header.title">DDS-O</h1>
+                            <p data-i18n="header.subtitle">Direction Départementale<br>de la Santé de l'Ouémé</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="cta-button" onclick="window.location.href='index.html#rendez-vous'" data-i18n="header.cta">
+                            Prendre rendez-vous
+                        </button>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="fr">FR</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html#accueil" data-i18n="navigation.home">Accueil</a></li>
+                    <li class="has-submenu">
+                        <a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a>
+                        <ul class="submenu">
+                            <li><a href="missions.html" data-i18n="navigation.missions">Missions</a></li>
+                            <li><a href="organigramme.html" class="active" data-i18n="navigation.organigramme">Organigramme</a></li>
+                            <li><a href="equipe.html" data-i18n="navigation.team">Équipe</a></li>
+                            <li><a href="historique.html" data-i18n="navigation.history">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#domaines" data-i18n="navigation.domains">Domaines d'intervention</a></li>
+                    <li><a href="index.html#projets" data-i18n="navigation.projects">Projets & Programmes</a></li>
+                    <li><a href="index.html#actualites" data-i18n="navigation.news">Actualités</a></li>
+                    <li><a href="index.html#publications" data-i18n="navigation.publications">Publications</a></li>
+                    <li><a href="index.html#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    <li><a href="index.html#contact" data-i18n="navigation.contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" data-i18n="navigation.home">Accueil</a>
+                <span>/</span>
+                <a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a>
+                <span>/</span>
+                <span data-i18n="navigation.organigramme">Organigramme</span>
+            </div>
+            <h1 data-i18n="organigramme.title">Organigramme</h1>
+            <p class="page-subtitle" data-i18n="organigramme.subtitle">Structure organisationnelle de la DDS-O</p>
+        </div>
+    </section>
+
+    <!-- Organization Chart -->
+    <section class="org-chart">
+        <div class="container">
+            <!-- Level 1: Director -->
+            <div class="org-level org-level-1">
+                <div class="org-box director">
+                    <div class="org-icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <h3 class="org-title" data-i18n="organigramme.director.title">Directeur Départemental</h3>
+                    <p class="org-name">Dr. William HOUNDJO</p>
+                    <div class="org-contact">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>directeur@dds-oueme.bj</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="org-connector">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+
+            <!-- Level 2: Deputy Directors -->
+            <div class="org-level org-level-2">
+                <div class="org-box deputy">
+                    <div class="org-icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.deputy1.title">Directeur Adjoint chargé des Soins</h4>
+                    <p class="org-name" data-i18n="organigramme.deputy1.name">Dr. [Nom à compléter]</p>
+                    <div class="org-contact">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>adjoint.soins@dds-oueme.bj</span>
+                    </div>
+                </div>
+
+                <div class="org-box deputy">
+                    <div class="org-icon">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.deputy2.title">Directeur Adjoint chargé de l'Administration</h4>
+                    <p class="org-name" data-i18n="organigramme.deputy2.name">M./Mme [Nom à compléter]</p>
+                    <div class="org-contact">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>adjoint.admin@dds-oueme.bj</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="org-connector">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+
+            <!-- Level 3: Services -->
+            <div class="org-level org-level-3">
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="pulse-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service1.title">Service Épidémiologie et Surveillance</h4>
+                    <p class="org-name" data-i18n="organigramme.service1.head">Chef de Service</p>
+                </div>
+
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service2.title">Service Santé Maternelle et Infantile</h4>
+                    <p class="org-name" data-i18n="organigramme.service2.head">Chef de Service</p>
+                </div>
+
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="medkit-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service3.title">Service de la Pharmacie et du Médicament</h4>
+                    <p class="org-name" data-i18n="organigramme.service3.head">Chef de Service</p>
+                </div>
+
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="analytics-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service4.title">Service Planification et Statistiques</h4>
+                    <p class="org-name" data-i18n="organigramme.service4.head">Chef de Service</p>
+                </div>
+
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="school-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service5.title">Service Formation et Recherche</h4>
+                    <p class="org-name" data-i18n="organigramme.service5.head">Chef de Service</p>
+                </div>
+
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service6.title">Service Financier et Comptable</h4>
+                    <p class="org-name" data-i18n="organigramme.service6.head">Chef de Service</p>
+                </div>
+
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service7.title">Service des Ressources Humaines</h4>
+                    <p class="org-name" data-i18n="organigramme.service7.head">Chef de Service</p>
+                </div>
+
+                <div class="org-box service">
+                    <div class="org-icon">
+                        <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
+                    <h4 class="org-title" data-i18n="organigramme.service8.title">Service du Système d'Information Sanitaire</h4>
+                    <p class="org-name" data-i18n="organigramme.service8.head">Chef de Service</p>
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="legend">
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <div class="legend-color direction"></div>
+                        <span data-i18n="organigramme.legend.direction">Direction</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color deputy"></div>
+                        <span data-i18n="organigramme.legend.deputy">Direction Adjointe</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color service"></div>
+                        <span data-i18n="organigramme.legend.service">Services Techniques</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Zones -->
+    <section class="zones-section">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 data-i18n="organigramme.zones.title">Zones Sanitaires Supervisées</h2>
+                <p data-i18n="organigramme.zones.subtitle">La DDS-O coordonne et supervise 3 zones sanitaires</p>
+            </div>
+
+            <div class="zones-grid">
+                <div class="zone-card">
+                    <h4>
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span data-i18n="organigramme.zones.abd.name">Zone Sanitaire Adjarra-Bonou-Dangbo (ABD)</span>
+                    </h4>
+                    <div class="zone-info">
+                        <p>
+                            <strong data-i18n="organigramme.zones.abd.coverage">Couverture:</strong> 
+                            <span data-i18n="organigramme.zones.abd.coverageText">Communes d'Adjarra, Bonou et Dangbo</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="organigramme.zones.abd.population">Population:</strong> 
+                            <span data-i18n="organigramme.zones.abd.populationText">~350,000 habitants</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="organigramme.zones.abd.centers">Centres de santé:</strong> 
+                            <span data-i18n="organigramme.zones.abd.centersText">25+ centres actifs</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="zone-card">
+                    <h4>
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span data-i18n="organigramme.zones.amaa.name">Zone Sanitaire Aguégués-Missérété-Akpro-Avrankou (AMAA)</span>
+                    </h4>
+                    <div class="zone-info">
+                        <p>
+                            <strong data-i18n="organigramme.zones.amaa.coverage">Couverture:</strong> 
+                            <span data-i18n="organigramme.zones.amaa.coverageText">Communes d'Aguégués, Missérété, Akpro-Missérété et Avrankou</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="organigramme.zones.amaa.population">Population:</strong> 
+                            <span data-i18n="organigramme.zones.amaa.populationText">~380,000 habitants</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="organigramme.zones.amaa.centers">Centres de santé:</strong> 
+                            <span data-i18n="organigramme.zones.amaa.centersText">28+ centres actifs</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="zone-card">
+                    <h4>
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span data-i18n="organigramme.zones.pnas.name">Zone Sanitaire Porto-Novo-Adjarra-Sèmè (PNAS)</span>
+                    </h4>
+                    <div class="zone-info">
+                        <p>
+                            <strong data-i18n="organigramme.zones.pnas.coverage">Couverture:</strong> 
+                            <span data-i18n="organigramme.zones.pnas.coverageText">Communes de Porto-Novo et Sèmè-Kpodji</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="organigramme.zones.pnas.population">Population:</strong> 
+                            <span data-i18n="organigramme.zones.pnas.populationText">~400,000 habitants</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="organigramme.zones.pnas.centers">Centres de santé:</strong> 
+                            <span data-i18n="organigramme.zones.pnas.centersText">30+ centres actifs</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.title">DDS-O</h4>
+                    <p data-i18n="footer.subtitle">Direction Départementale de la Santé de l'Ouémé</p>
+                    <p data-i18n="footer.location">Porto-Novo, Bénin</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a></li>
+                        <li><a href="index.html#domaines" data-i18n="navigation.domains">Nos domaines</a></li>
+                        <li><a href="index.html#actualites" data-i18n="navigation.news">Actualités</a></li>
+                        <li><a href="index.html#contact" data-i18n="navigation.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="index.html#rendez-vous" data-i18n="quickServices.appointment.title">Prendre rendez-vous</a></li>
+                        <li><a href="index.html#signalement" data-i18n="quickServices.report.title">Signaler un problème</a></li>
+                        <li><a href="index.html#publications" data-i18n="navigation.publications">Publications</a></li>
+                        <li><a href="index.html#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.newsletter.title">Newsletter</h4>
+                    <p data-i18n="footer.newsletter.description">Restez informé de nos actualités</p>
+                    <form class="newsletter-form">
+                        <input type="email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Votre email" required>
+                        <button type="submit" data-i18n="footer.newsletter.submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-i18n="footer.copyright">Direction Départementale de la Santé de l'Ouémé. Tous droits réservés.</span></p>
+                <div class="footer-links">
+                    <a href="#" data-i18n="footer.legal">Mentions légales</a>
+                    <a href="#" data-i18n="footer.accessibility">Accessibilité</a>
+                    <a href="#" data-i18n="footer.sitemap">Plan du site</a>
+                    <a href="#" data-i18n="footer.privacy">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+    <!-- i18next Initialization -->
+    <script>
+        // Variables globales pour les traductions
+        let translationResources = {
+            fr: { translation: {} },
+            en: { translation: {} }
+        };
+        
+        // Charger les fichiers de traduction
+        Promise.all([
+            fetch('fr.json').then(response => response.json()),
+            fetch('en.json').then(response => response.json())
+        ])
+        .then(([frData, enData]) => {
+            translationResources.fr.translation = frData;
+            translationResources.en.translation = enData;
+            initializeI18next();
+        })
+        .catch(error => {
+            console.error('❌ Erreur lors du chargement des traductions:', error);
+        });
+        
+        // Initialiser i18next
+        function initializeI18next() {
+            i18next.init({
+                lng: localStorage.getItem('preferredLanguage') || 'fr',
+                fallbackLng: 'fr',
+                resources: translationResources,
+                interpolation: {
+                    escapeValue: false
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('❌ Erreur d\'initialisation i18next:', err);
+                    return;
+                }
+                updateContent();
+                console.log('✅ i18next initialisé avec succès en', i18next.language.toUpperCase());
+            });
+        }
+        
+        // Mettre à jour tout le contenu
+        function updateContent() {
+            // Traduire tous les éléments avec data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18next.t(key);
+                
+                if (translation && translation !== key) {
+                    if (translation.includes('<br>')) {
+                        element.innerHTML = translation;
+                    } else {
+                        element.textContent = translation;
+                    }
+                }
+            });
+            
+            // Traduire les placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n-placeholder');
+                const translation = i18next.t(key);
+                if (translation && translation !== key) {
+                    element.placeholder = translation;
+                }
+            });
+            
+            // Mettre à jour l'attribut lang du HTML
+            document.documentElement.lang = i18next.language;
+            
+            console.log('✅ Contenu mis à jour en', i18next.language.toUpperCase());
+        }
+        
+        // Gérer le changement de langue
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    
+                    // Changer la langue
+                    i18next.changeLanguage(lang, function(err, t) {
+                        if (err) {
+                            console.error('❌ Erreur de changement de langue:', err);
+                            return;
+                        }
+                        
+                        // Sauvegarder la préférence
+                        localStorage.setItem('preferredLanguage', lang);
+                        
+                        // Mettre à jour le contenu
+                        updateContent();
+                        
+                        // Mettre à jour les boutons actifs
+                        langButtons.forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        console.log('🌍 Langue changée en', lang.toUpperCase());
+                    });
+                });
+            });
+        });
+    </script>
+    
+    <!-- Script d'interactions organigramme -->
+    <script src="organigramme.js"></script>
+</body>
+</html>

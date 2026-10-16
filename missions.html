@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Missions de la Direction Départementale de la Santé de l'Ouémé">
+    <title data-i18n="missions.pageTitle">Nos Missions | DDS-O</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="organigramme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="logo-section">
+                        <div class="logo-emblem">
+                            <img src="imgs/Logo.png" alt="Logo DDS-O" class="logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <h1 data-i18n="header.title">DDS-O</h1>
+                            <p data-i18n="header.subtitle">Direction Départementale<br>de la Santé de l'Ouémé</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="cta-button" onclick="window.location.href='index.html#rendez-vous'" data-i18n="header.cta">
+                            Prendre rendez-vous
+                        </button>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="fr">FR</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html#accueil" data-i18n="navigation.home">Accueil</a></li>
+                    <li class="has-submenu">
+                        <a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a>
+                        <ul class="submenu">
+                            <li><a href="missions.html" class="active" data-i18n="navigation.missions">Missions</a></li>
+                            <li><a href="organigramme.html" data-i18n="navigation.organigramme">Organigramme</a></li>
+                            <li><a href="equipe.html" data-i18n="navigation.team">Équipe</a></li>
+                            <li><a href="historique.html" data-i18n="navigation.history">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#domaines" data-i18n="navigation.domains">Domaines d'intervention</a></li>
+                    <li><a href="index.html#projets" data-i18n="navigation.projects">Projets & Programmes</a></li>
+                    <li><a href="index.html#actualites" data-i18n="navigation.news">Actualités</a></li>
+                    <li><a href="index.html#publications" data-i18n="navigation.publications">Publications</a></li>
+                    <li><a href="index.html#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    <li><a href="index.html#contact" data-i18n="navigation.contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" data-i18n="navigation.home">Accueil</a>
+                <span>/</span>
+                <a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a>
+                <span>/</span>
+                <span data-i18n="navigation.missions">Missions</span>
+            </div>
+            <h1 data-i18n="missions.title">Nos Missions</h1>
+            <p class="page-subtitle" data-i18n="missions.subtitle">La Direction Départementale de la Santé de l'Ouémé au service de la population</p>
+        </div>
+    </section>
+
+    <!-- Main Mission Statement -->
+    <section class="mission-statement">
+        <div class="container">
+            <div class="statement-card">
+                <div class="statement-icon">
+                    <ion-icon name="flag-outline"></ion-icon>
+                </div>
+                <h2 data-i18n="missions.mainMission.title">Notre Mission Principale</h2>
+                <p class="lead" data-i18n="missions.mainMission.description">Assurer la mise en œuvre de la politique sanitaire nationale au niveau du département de l'Ouémé, garantir l'accès universel à des soins de santé de qualité et coordonner l'ensemble des acteurs du système de santé pour améliorer les indicateurs sanitaires de la population.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Missions -->
+    <section class="strategic-missions">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label" data-i18n="missions.strategic.label">Nos axes stratégiques</span>
+                <h2 data-i18n="missions.strategic.title">Missions Stratégiques</h2>
+            </div>
+
+            <div class="missions-grid">
+                <div class="mission-card">
+                    <div class="mission-number">01</div>
+                    <div class="mission-icon">
+                        <ion-icon name="analytics-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.strategic.mission1.title">Planification et Coordination</h3>
+                    <p data-i18n="missions.strategic.mission1.description">Élaborer, mettre en œuvre et suivre les plans d'action sanitaires départementaux en coordination avec le Ministère de la Santé et les zones sanitaires.</p>
+                    <ul class="mission-actions">
+                        <li data-i18n="missions.strategic.mission1.action1">Planification stratégique triennale et annuelle</li>
+                        <li data-i18n="missions.strategic.mission1.action2">Coordination des 3 zones sanitaires (ABD, AMAA, PNAS)</li>
+                        <li data-i18n="missions.strategic.mission1.action3">Suivi-évaluation des performances</li>
+                        <li data-i18n="missions.strategic.mission1.action4">Harmonisation des interventions sanitaires</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-number">02</div>
+                    <div class="mission-icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.strategic.mission2.title">Amélioration de l'Offre de Soins</h3>
+                    <p data-i18n="missions.strategic.mission2.description">Garantir la disponibilité et l'accessibilité de services de santé de qualité à tous les niveaux de la pyramide sanitaire.</p>
+                    <ul class="mission-actions">
+                        <li data-i18n="missions.strategic.mission2.action1">Supervision des centres de santé publics et privés</li>
+                        <li data-i18n="missions.strategic.mission2.action2">Amélioration du plateau technique</li>
+                        <li data-i18n="missions.strategic.mission2.action3">Formation continue du personnel de santé</li>
+                        <li data-i18n="missions.strategic.mission2.action4">Accréditation et contrôle qualité</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-number">03</div>
+                    <div class="mission-icon">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.strategic.mission3.title">Prévention et Promotion de la Santé</h3>
+                    <p data-i18n="missions.strategic.mission3.description">Développer des programmes de prévention et de promotion de la santé pour réduire la morbidité et la mortalité.</p>
+                    <ul class="mission-actions">
+                        <li data-i18n="missions.strategic.mission3.action1">Campagnes de vaccination de masse</li>
+                        <li data-i18n="missions.strategic.mission3.action2">Éducation sanitaire et sensibilisation</li>
+                        <li data-i18n="missions.strategic.mission3.action3">Lutte contre les maladies transmissibles</li>
+                        <li data-i18n="missions.strategic.mission3.action4">Promotion de l'hygiène et de l'assainissement</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-number">04</div>
+                    <div class="mission-icon">
+                        <ion-icon name="pulse-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.strategic.mission4.title">Surveillance Épidémiologique</h3>
+                    <p data-i18n="missions.strategic.mission4.description">Assurer une veille sanitaire permanente et une réponse rapide aux urgences de santé publique.</p>
+                    <ul class="mission-actions">
+                        <li data-i18n="missions.strategic.mission4.action1">Système de surveillance des maladies</li>
+                        <li data-i18n="missions.strategic.mission4.action2">Investigation des épidémies</li>
+                        <li data-i18n="missions.strategic.mission4.action3">Gestion des urgences sanitaires</li>
+                        <li data-i18n="missions.strategic.mission4.action4">Rapportage au niveau central</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-number">05</div>
+                    <div class="mission-icon">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.strategic.mission5.title">Santé Maternelle et Infantile</h3>
+                    <p data-i18n="missions.strategic.mission5.description">Réduire la mortalité maternelle, néonatale et infanto-juvénile à travers des interventions ciblées.</p>
+                    <ul class="mission-actions">
+                        <li data-i18n="missions.strategic.mission5.action1">Consultations prénatales et postnatales</li>
+                        <li data-i18n="missions.strategic.mission5.action2">Accouchements assistés</li>
+                        <li data-i18n="missions.strategic.mission5.action3">Prise en charge des urgences obstétricales</li>
+                        <li data-i18n="missions.strategic.mission5.action4">Suivi de la croissance de l'enfant</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-number">06</div>
+                    <div class="mission-icon">
+                        <ion-icon name="medkit-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.strategic.mission6.title">Gestion des Médicaments</h3>
+                    <p data-i18n="missions.strategic.mission6.description">Assurer la disponibilité, l'accessibilité et la qualité des médicaments essentiels et des produits de santé.</p>
+                    <ul class="mission-actions">
+                        <li data-i18n="missions.strategic.mission6.action1">Approvisionnement en médicaments essentiels</li>
+                        <li data-i18n="missions.strategic.mission6.action2">Contrôle de la qualité pharmaceutique</li>
+                        <li data-i18n="missions.strategic.mission6.action3">Lutte contre les médicaments contrefaits</li>
+                        <li data-i18n="missions.strategic.mission6.action4">Pharmacovigilance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Responsibilities -->
+    <section class="responsibilities-section">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 data-i18n="missions.responsibilities.title">Responsabilités Clés</h2>
+            </div>
+
+            <div class="responsibilities-grid">
+                <div class="responsibility-item">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <div>
+                        <h4 data-i18n="missions.responsibilities.item1.title">Appui technique aux communes</h4>
+                        <p data-i18n="missions.responsibilities.item1.description">Accompagnement des mairies dans la planification et la mise en œuvre des actions de santé communautaire</p>
+                    </div>
+                </div>
+
+                <div class="responsibility-item">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <div>
+                        <h4 data-i18n="missions.responsibilities.item2.title">Mobilisation des ressources</h4>
+                        <p data-i18n="missions.responsibilities.item2.description">Recherche et mobilisation de financements pour les programmes de santé départementaux</p>
+                    </div>
+                </div>
+
+                <div class="responsibility-item">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <div>
+                        <h4 data-i18n="missions.responsibilities.item3.title">Gestion des ressources humaines</h4>
+                        <p data-i18n="missions.responsibilities.item3.description">Planification, formation et déploiement du personnel de santé dans le département</p>
+                    </div>
+                </div>
+
+                <div class="responsibility-item">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <div>
+                        <h4 data-i18n="missions.responsibilities.item4.title">Partenariat et collaboration</h4>
+                        <p data-i18n="missions.responsibilities.item4.description">Collaboration avec les partenaires techniques et financiers pour l'atteinte des objectifs</p>
+                    </div>
+                </div>
+
+                <div class="responsibility-item">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <div>
+                        <h4 data-i18n="missions.responsibilities.item5.title">Système d'information sanitaire</h4>
+                        <p data-i18n="missions.responsibilities.item5.description">Collecte, analyse et diffusion des données sanitaires pour la prise de décision</p>
+                    </div>
+                </div>
+
+                <div class="responsibility-item">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <div>
+                        <h4 data-i18n="missions.responsibilities.item6.title">Recherche opérationnelle</h4>
+                        <p data-i18n="missions.responsibilities.item6.description">Conduite d'études pour améliorer l'efficacité des interventions sanitaires</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Values -->
+    <section class="vision-values-section">
+        <div class="container">
+            <div class="vision-values-grid">
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.vision.title">Notre Vision</h3>
+                    <p data-i18n="missions.vision.description">Un département de l'Ouémé où chaque citoyen a accès à des soins de santé de qualité, dans un système de santé performant, équitable et résilient, contribuant au développement humain durable.</p>
+                </div>
+
+                <div class="values-card">
+                    <div class="card-icon">
+                        <ion-icon name="diamond-outline"></ion-icon>
+                    </div>
+                    <h3 data-i18n="missions.values.title">Nos Valeurs</h3>
+                    <ul class="values-list">
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <span data-i18n="missions.values.value1">Excellence et qualité des soins</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <span data-i18n="missions.values.value2">Équité et accessibilité universelle</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <span data-i18n="missions.values.value3">Intégrité et redevabilité</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <span data-i18n="missions.values.value4">Innovation et amélioration continue</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <span data-i18n="missions.values.value5">Collaboration et partenariat</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="missions.cta.title">Ensemble pour une meilleure santé</h2>
+                <p data-i18n="missions.cta.description">Découvrez comment nous mettons en œuvre nos missions au quotidien</p>
+                <div class="cta-buttons">
+                    <a href="equipe.html" class="btn-primary" data-i18n="missions.cta.team">Rencontrer notre équipe</a>
+                    <a href="index.html#projets" class="btn-secondary" data-i18n="missions.cta.projects">Voir nos projets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.title">DDS-O</h4>
+                    <p data-i18n="footer.subtitle">Direction Départementale de la Santé de l'Ouémé</p>
+                    <p data-i18n="footer.location">Porto-Novo, Bénin</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html#presentation" data-i18n="navigation.presentation">Présentation</a></li>
+                        <li><a href="index.html#domaines" data-i18n="navigation.domains">Nos domaines</a></li>
+                        <li><a href="index.html#actualites" data-i18n="navigation.news">Actualités</a></li>
+                        <li><a href="index.html#contact" data-i18n="navigation.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="index.html#rendez-vous" data-i18n="quickServices.appointment.title">Prendre rendez-vous</a></li>
+                        <li><a href="index.html#signalement" data-i18n="quickServices.report.title">Signaler un problème</a></li>
+                        <li><a href="index.html#publications" data-i18n="navigation.publications">Publications</a></li>
+                        <li><a href="index.html#partenaires" data-i18n="navigation.partners">Partenaires</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.newsletter.title">Newsletter</h4>
+                    <p data-i18n="footer.newsletter.description">Restez informé de nos actualités</p>
+                    <form class="newsletter-form">
+                        <input type="email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Votre email" required>
+                        <button type="submit" data-i18n="footer.newsletter.submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-i18n="footer.copyright">Direction Départementale de la Santé de l'Ouémé. Tous droits réservés.</span></p>
+                <div class="footer-links">
+                    <a href="#" data-i18n="footer.legal">Mentions légales</a>
+                    <a href="#" data-i18n="footer.accessibility">Accessibilité</a>
+                    <a href="#" data-i18n="footer.sitemap">Plan du site</a>
+                    <a href="#" data-i18n="footer.privacy">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load translation files and initialize i18next -->
+    <script>
+        let translationResources = {
+            fr: { translation: {} },
+            en: { translation: {} }
+        };
+        
+        fetch('fr.json')
+            .then(response => response.json())
+            .then(data => {
+                translationResources.fr.translation = data;
+                return fetch('en.json');
+            })
+            .then(response => response.json())
+            .then(data => {
+                translationResources.en.translation = data;
+                initializeI18next();
+            })
+            .catch(error => {
+                console.error('Error loading translations:', error);
+            });
+        
+        function initializeI18next() {
+            i18next.init({
+                lng: localStorage.getItem('preferredLanguage') || 'fr',
+                fallbackLng: 'fr',
+                resources: translationResources,
+                interpolation: {
+                    escapeValue: false
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('i18next initialization error:', err);
+                    return;
+                }
+                updateContent();
+            });
+        }
+        
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18next.t(key);
+                
+                if (translation.includes('<br>')) {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
+            });
+            
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(function(element) {
+                const key = element.getAttribute('data-i18n-placeholder');
+                element.placeholder = i18next.t(key);
+            });
+        }
+    </script>
+    
+    <script src="animations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
